@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: enter-your-complete-sitemap-url-here
