@@ -1,10 +1,16 @@
 import Layout from "../layouts/layout";
+import Container from "../layouts/container";
+import Meta from "../components/meta";
 
 export default function Home() {
   return (
     <>
+      <Meta />
       <Layout>
-        Woaah!
+        <Container>
+          <p className="p-5 text-center">I Should be main content</p>
+        </Container>
+
         {/* <Container>
           <Intro />
           {heroPost && (
