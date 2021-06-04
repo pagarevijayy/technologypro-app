@@ -7,10 +7,9 @@ export default function Layout({ children }) {
   const showAlert = false;
 
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen font-sans text-gray-800 bg-gray-200">
       {showAlert && <Alert alertMessage={alertMessage} />}
       <Menubar />
-      <Container></Container>
       <main>{children}</main>
       {/* <Footer /> */}
     </div>

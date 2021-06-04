@@ -9,7 +9,7 @@ const Menubar = () => {
       slug: "/news",
     },
     {
-      title: "How-To",
+      title: "How to",
       slug: "/how-to",
     },
     {
@@ -27,7 +27,7 @@ const Menubar = () => {
           </div>
           <div>
             <nav className="hidden md:block">
-              <ul className="flex items-center space-x-6 font-medium capitalize">
+              <ul className="flex items-center space-x-6 font-medium">
                 {menuItems.map((item, index) => {
                   return (
                     <li key={item.title + `${index}`}>

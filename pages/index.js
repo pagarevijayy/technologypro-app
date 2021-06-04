@@ -1,6 +1,9 @@
 import Layout from "../layouts/layout";
 import Container from "../layouts/container";
+
 import Meta from "../components/meta";
+import ContentAsideRight from "../components/content-aside-right";
+import ContentPrimary from "../components/content-primary";
 
 export default function Home() {
   return (
@@ -8,23 +11,15 @@ export default function Home() {
       <Meta />
       <Layout>
         <Container>
-          <p className="p-5 text-center">I Should be main content</p>
+          <div className="md:grid md:grid-cols-3 gap-6 my-4">
+            <div className="col-span-2 my-4">
+              <ContentPrimary></ContentPrimary>
+            </div>
+            <div className="col-span-1 my-4">
+              <ContentAsideRight></ContentAsideRight>
+            </div>
+          </div>
         </Container>
-
-        {/* <Container>
-          <Intro />
-          {heroPost && (
-            <HeroPost
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        </Container> */}
       </Layout>
     </>
   );
