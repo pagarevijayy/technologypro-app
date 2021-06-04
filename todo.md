@@ -12,6 +12,7 @@
 
 - [ ] feature
 
+  - [ ] page layout: <s> Homepage </s>, blog page, category page
   - [ ] search
 
 - [ ] **Pre-deploy**

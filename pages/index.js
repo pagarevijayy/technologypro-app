@@ -11,12 +11,12 @@ export default function Home() {
       <Meta />
       <Layout>
         <Container>
-          <div className="md:grid md:grid-cols-3 gap-6 my-4">
-            <div className="col-span-2 my-4">
+          <div className="md:grid md:grid-cols-3 gap-6 mt-4 pb-8">
+            <div className="col-span-2 mt-4">
               <ContentPrimary></ContentPrimary>
             </div>
-            <div className="col-span-1 my-4">
-              <ContentAsideRight></ContentAsideRight>
+            <div className="col-span-1 mt-4">
+              <ContentAsideRight />
             </div>
           </div>
         </Container>
@@ -24,3 +24,7 @@ export default function Home() {
     </>
   );
 }
+
+/*
+show featured x2 and latest mixed. (allow pagination and search)
+*/
