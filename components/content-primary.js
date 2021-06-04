@@ -1,6 +1,7 @@
-import ContentSnippet from "../layouts/content-snippet";
 import HeroPost from "../components/hero-post";
 import PostPreview from "../components/post-preview";
+
+//  This is the landing page content.
 
 const ContentPrimary = () => {
   return (

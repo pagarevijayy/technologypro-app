@@ -14,5 +14,8 @@ export default function Home() {
 }
 
 /*
-show featured x2 and latest mixed. (allow pagination and search)
+features: search and pagination
+
+logic: 
+- sort content on the basis of date.
 */
