@@ -18,3 +18,6 @@
 - [ ] **Pre-deploy**
   - [ ] update: constants/core
   - [ ] update: public/robots.txt
+
+------.
+MAKE PAGES AND posts dynamic and deploy

@@ -10,6 +10,7 @@
 .prose .anchor {
   position: absolute;
   width: 100%;
+  height: 100%;
   left: -0.9em;
   cursor: pointer;
   text-decoration: none;

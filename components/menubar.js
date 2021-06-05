@@ -10,7 +10,7 @@ const Menubar = () => {
     },
     {
       title: "How to",
-      slug: "/blog/react-is-awesome",
+      slug: "/blog/teach-online",
     },
     {
       title: "Social Media",

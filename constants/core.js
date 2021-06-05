@@ -6,3 +6,17 @@ export const PROJECT_TYPE = "website";
 export const PROJECT_ROOT_URL = "https://your-site.com";
 export const PROJECT_BANNER_URL = "https://your-site.com/banner-here.png";
 export const TWITTER_HANDLE = "@your_site";
+export const CATEGORIES = [
+  {
+    title: "Android",
+    route: "/category/android",
+  },
+  {
+    title: "How to",
+    route: "/category/how-to",
+  },
+  {
+    title: "Social Media",
+    route: "/category/social-media",
+  },
+];

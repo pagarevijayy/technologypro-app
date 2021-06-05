@@ -11,7 +11,7 @@ const PostContent = ({ frontMatter, children }) => {
         </p>
       </div>
 
-      <div className="prose prose-indigo">{children}</div>
+      <div className="prose">{children}</div>
     </div>
   );
 };

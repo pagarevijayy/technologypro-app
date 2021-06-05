@@ -28,7 +28,7 @@ export default function Meta(props) {
     name: PROJECT_NAME,
     twitterHandle: TWITTER_HANDLE,
     ...customMeta,
-  }; // additional meta field expected: date
+  }; // additional meta field expected: date (yyyy-mm-dd)
 
   return (
     <Head>
@@ -48,7 +48,10 @@ export default function Meta(props) {
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
       {meta.date && (
-        <meta property="article:published_time" content={meta.date} />
+        <meta
+          property="article:published_time"
+          content={new Date(meta.date).toISOString()}
+        />
       )}
       <link rel="icon" href={emojiFaviconURL}></link>
     </Head>

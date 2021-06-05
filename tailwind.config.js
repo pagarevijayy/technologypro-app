@@ -22,6 +22,15 @@ module.exports = {
               position: "relative",
               "scroll-margin-top": spacing[24],
             },
+            a: {
+              color: "#3b82f6",
+              "&:hover": {
+                color: "#1d4ed8",
+              },
+              "&:visited": {
+                color: "#4F46E5",
+              },
+            },
           },
         },
       },
