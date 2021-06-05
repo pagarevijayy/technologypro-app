@@ -1,7 +1,7 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+const { spacing, fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  mode: "jit",
+  // mode: "jit",
   purge: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -12,13 +12,26 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+        poppins: ["Poppins", ...fontFamily.sans],
         sans: ["Roboto", ...fontFamily.sans],
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            "h2,h3,h4": {
+              position: "relative",
+              "scroll-margin-top": spacing[24],
+            },
+          },
+        },
       },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

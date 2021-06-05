@@ -5,12 +5,12 @@ import { brandLogo } from "../constants/brand";
 const Menubar = () => {
   const menuItems = [
     {
-      title: "News",
-      slug: "/news",
+      title: "Android",
+      slug: "/category/android",
     },
     {
       title: "How to",
-      slug: "/how-to",
+      slug: "/blog/react-is-awesome",
     },
     {
       title: "Social Media",
@@ -19,7 +19,7 @@ const Menubar = () => {
   ];
 
   return (
-    <header className="py-4 bg-gray-900 text-gray-100">
+    <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-50">
       <Container>
         <div className="flex justify-between items-center">
           <div className="font-poppins font-bold text-lg tracking-wide">
