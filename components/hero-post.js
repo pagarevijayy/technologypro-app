@@ -9,12 +9,9 @@ const HeroPost = ({ frontMatter }) => {
   );
 
   return (
-    <article className="md:flex p-6 bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+    <article className="max-w-sm mx-auto sm:max-w-4xl sm:flex bg-gray-100 rounded-lg shadow-sm overflow-hidden">
       <div>
-        <figure
-          className="-my-6 -ml-6 -mr-6 md:mr-0"
-          style={{ position: "relative", height: "270px", width: "450px" }}
-        >
+        <figure className="relative h-56 w-full sm:w-64 md:w-48 lg:w-64 xl:w-80  sm:h-full">
           <Image
             alt={frontMatter.title}
             src={frontMatter.image}
@@ -24,16 +21,9 @@ const HeroPost = ({ frontMatter }) => {
           />
         </figure>
       </div>
-      <div
-        className="max-w-prose mt-10 md:pl-6 md:mt-0"
-        style={{ minWidth: "450px" }}
-      >
-        <h1 className="line-clamp-2 text-2xl font-poppins font-bold">
-          {frontMatter.title}
-        </h1>
-
+      <div className="p-6">
         {category[0] && (
-          <aside className="mt-5 flex items-center font-bold text-xs text-indigo-600 uppercase">
+          <aside className="flex items-center font-bold text-xs text-indigo-600 uppercase">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -50,9 +40,13 @@ const HeroPost = ({ frontMatter }) => {
           </aside>
         )}
 
+        <h1 className=" mt-4 line-clamp-2 text-2xl font-poppins font-bold">
+          {frontMatter.title}
+        </h1>
+
         <p className="mt-3 line-clamp-3">{frontMatter.summary}</p>
 
-        <div className="flex justify-between mt-5 text-xs text-gray-500">
+        <div className="mt-5 flex justify-between text-xs text-gray-500">
           <p>{format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}</p>
           <p>{frontMatter.readingTime.text}</p>
         </div>

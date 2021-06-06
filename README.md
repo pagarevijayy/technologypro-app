@@ -5,6 +5,7 @@
 ## Note
 
 1. Hero post is hard coded (featured or most popular)
+2. Don't use images with too much text
 
 ## MDX File Rules
 
