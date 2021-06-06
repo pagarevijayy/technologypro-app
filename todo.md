@@ -17,14 +17,15 @@
 
 ##### Context
 
-- [ ] primary page
-- [ ] category page
+- [x] primary page
 - [x] blog page
-- [ ] dynamic: meta, menu
+- [x] category page
+- [ ] mobile menu
+- [x] a separate featured-posts component
+- [x] dynamic meta
 - [x] make search work
 - [x] component: footer
-- [ ] mobile header - menu
-- [ ] deploy!
+- [ ] write posts, and deploy!
 
 ---
 
@@ -34,6 +35,14 @@
   - [ ] error handling and negative senarios
   - [ ] test coverage
   - [ ] use brand classes in css
+  - [ ] handle 404 swiftly
 - [ ] features
-  - [ ] pagination
   - [ ] scrapping script - [refer later](https://www.benawad.com/scraping-recipe-websites/)
+  - [ ] pagination
+
+---
+
+@todo
+
+context vs redux
+use reduce in nextjs

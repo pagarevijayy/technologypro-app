@@ -1,11 +1,11 @@
 import { useState } from "react";
 import NotFound from "../components/not-found";
-import HeroPost from "../components/hero-post";
+import FeaturedPosts from "../components/featured-posts";
 import PostPreview from "../components/post-preview";
 
 /** This is the landing page content. Hero-posts are hard-coded.*/
 
-const ContentPrimary = ({ posts }) => {
+const ContentPrimary = ({ posts, isCategoryRoute }) => {
   const [searchValue, setSearchValue] = useState("");
 
   const filteredBlogPosts = posts
@@ -16,39 +16,6 @@ const ContentPrimary = ({ posts }) => {
     .filter((frontMatter) =>
       frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
     );
-
-  const heroOne = {
-    title: "Beginner’s Guide to the Programming Portfolio",
-    publishedAt: "2017-02-24",
-    summary:
-      "Learn how to create your programming portfolio from the ground up, including tips and tricks I learned building my own. Learn how to create your programming portfolio from the ground up, including tips and tricks I learned building my own.",
-    image:
-      "/static/images/beginners-guide-to-the-programming-portfolio/banner.png",
-    category: "android",
-    readingTime: {
-      text: "12 min read",
-      minutes: 11.095,
-      time: 665700,
-      words: 2219,
-    },
-    slug: "guide-to-portfolio",
-  };
-
-  const heroTwo = {
-    title: "Web Fonts in 2021",
-    publishedAt: "2021-01-13",
-    summary:
-      "Learn the best practices for high-performance sites using web fonts, updated for 2021.",
-    image: "/static/images/fonts/banner.png",
-    category: "how-to",
-    readingTime: {
-      text: "5 min read",
-      minutes: 4.205,
-      time: 252300,
-      words: 841,
-    },
-    slug: "fonts",
-  };
 
   return (
     <div>
@@ -75,15 +42,8 @@ const ContentPrimary = ({ posts }) => {
           />
         </svg>
       </div>
-      {!searchValue && (
-        <section className="space-y-4">
-          <h3 className="font-bold text-2xl mb-4 mt-8">Featured Posts</h3>
+      {!searchValue && !isCategoryRoute && <FeaturedPosts />}
 
-          {/* can hard code featured or most popular mosts here */}
-          <HeroPost frontMatter={heroOne}></HeroPost>
-          <HeroPost frontMatter={heroTwo}></HeroPost>
-        </section>
-      )}
       <h3 className="font-bold text-2xl mb-4 mt-8">All Posts</h3>
       {!filteredBlogPosts.length && <NotFound />}
 

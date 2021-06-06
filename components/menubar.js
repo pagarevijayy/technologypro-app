@@ -1,22 +1,10 @@
 import Link from "next/link";
 import Container from "../layouts/container";
 import { brandLogo } from "../constants/brand";
+import { CATEGORIES } from "../constants/core";
 
 const Menubar = () => {
-  const menuItems = [
-    {
-      title: "Android",
-      slug: "/category/android",
-    },
-    {
-      title: "How to",
-      slug: "/blog/teach-online",
-    },
-    {
-      title: "Social Media",
-      slug: "/social",
-    },
-  ];
+  const menuItems = [...CATEGORIES];
 
   return (
     <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-30">
@@ -31,7 +19,7 @@ const Menubar = () => {
                 {menuItems.map((item, index) => {
                   return (
                     <li key={item.title + `${index}`}>
-                      <Link href={item.slug}>
+                      <Link href={item.route}>
                         <a>{item.title}</a>
                       </Link>
                     </li>
