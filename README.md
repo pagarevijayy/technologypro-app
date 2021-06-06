@@ -2,6 +2,10 @@
 
 (update later!)
 
+## Note
+
+1. Hero post is hard coded (featured or most popular)
+
 ## MDX File Rules
 
 1. Double check **frontMatter** details and format.

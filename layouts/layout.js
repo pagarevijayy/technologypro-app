@@ -1,6 +1,7 @@
 import Container from "../layouts/container";
 import Alert from "../components/alert";
 import Menubar from "../components/menubar";
+import Footer from "../components/footer";
 import ContentAsideRight from "../components/content-aside-right";
 
 export default function Layout({ children }) {
@@ -21,7 +22,7 @@ export default function Layout({ children }) {
           </div>
         </Container>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

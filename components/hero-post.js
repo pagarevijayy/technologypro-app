@@ -1,30 +1,39 @@
-import ContentSnippet from "../layouts/content-snippet";
+import Image from "next/image";
+import { parseISO, format } from "date-fns";
+import { CATEGORIES } from "../constants/core";
 
-const HeroPost = () => {
+const HeroPost = ({ frontMatter }) => {
+  console.log("hero", frontMatter);
+  let category = CATEGORIES.filter((c) =>
+    c.route.includes(frontMatter.category)
+  );
+
   return (
-    <article className="p-6 bg-gray-100 rounded-lg shadow-sm">
-      <h1 className="text-2xl font-poppins font-bold">
-        How to Approve iPhone from PC
-      </h1>
-      <p className="mt-1 text-xs text-gray-500">
-        May 25, 2021 8:22 pm by Rippal Vyas
-      </p>
-      <section className="mt-10 md:flex md:items-start md:justify-center">
-        <figure>
-          <img
-            className="rounded-md"
-            src="https://3nions.com/wp-content/uploads/2020/06/ios13-iphone-xs-ipad-pro-two-factor-authentication-hero-scaled.jpg?ezimgfmt=ng:webp/ngcb4"
-            alt=""
+    <article className="md:flex p-6 bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+      <div>
+        <figure
+          className="-my-6 -ml-6 -mr-6 md:mr-0"
+          style={{ position: "relative", height: "270px", width: "450px" }}
+        >
+          <Image
+            alt={frontMatter.title}
+            src={frontMatter.image}
+            layout="fill"
+            objectFit="cover"
+            priority
           />
         </figure>
-        <div className="mt-10 md:pl-6 md:mt-0">
-          <p className="line-clamp-3">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis
-            minus placeat labore, sed, eveniet laudantium pariatur molestiae
-            corrupti consectetur at, non expedita reprehenderit eligendi quod
-            sunt impedit cum quasi repellat.
-          </p>
-          <aside className="flex items-center mt-3 font-bold text-xs text-indigo-600 uppercase">
+      </div>
+      <div
+        className="max-w-prose mt-10 md:pl-6 md:mt-0"
+        style={{ minWidth: "450px" }}
+      >
+        <h1 className="line-clamp-2 text-2xl font-poppins font-bold">
+          {frontMatter.title}
+        </h1>
+
+        {category[0] && (
+          <aside className="mt-5 flex items-center font-bold text-xs text-indigo-600 uppercase">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-4 w-4"
@@ -37,10 +46,17 @@ const HeroPost = () => {
                 clipRule="evenodd"
               />
             </svg>
-            <span className="px-0.5">How to</span>
+            <span className="px-0.5">{category[0].title}</span>
           </aside>
+        )}
+
+        <p className="mt-3 line-clamp-3">{frontMatter.summary}</p>
+
+        <div className="flex justify-between mt-5 text-xs text-gray-500">
+          <p>{format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}</p>
+          <p>{frontMatter.readingTime.text}</p>
         </div>
-      </section>
+      </div>
     </article>
   );
 };

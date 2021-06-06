@@ -1,23 +1,38 @@
-# Feature Roadmap
+# todo
 
-- [ ] **Layout**
+#### Roadmap
 
-  - [ ] layout, container, header, footer, <s> meta </s>
-  - [ ] alert, avatar, cover-image, date-formatter,
-  - [ ] intro, hero-post, more-stories, post-preview, post-title, post-header, post-body
+- [x] Develop
 
-- [ ] fix
+  - [x] layout, container, header, footer,meta
+  - [x] pages: home, category, post
+  - [x] alert, date-formatter,
+  - [x] hero-post, post-preview, post-title, post-content
 
-  - [ ] Header: actual routes, mobile hamburger (... and everything ux)
-
-- [ ] feature
-
-  - [ ] page layout: <s> Homepage </s>, blog page, category page
-  - [ ] search
-
-- [ ] **Pre-deploy**
+- [ ] Pre-deploy: Dynamism
   - [ ] update: constants/core
   - [ ] update: public/robots.txt
 
-------.
-MAKE PAGES AND posts dynamic and deploy
+---
+
+##### Context
+
+- [ ] primary page
+- [ ] category page
+- [ ] blog page
+- [ ] dynamic: meta, menu
+- [x] component: footer
+- [ ] mobile header - menu
+- [ ] deploy!
+
+---
+
+##### Backlog
+
+- [ ] issues
+  - [ ] error handling and negative senarios
+  - [ ] test coverage
+  - [ ] use brand classes in css
+- [ ] features
+  - [ ] pagination
+  - [ ] scrapping script - [refer later](https://www.benawad.com/scraping-recipe-websites/)

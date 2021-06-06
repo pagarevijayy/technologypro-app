@@ -1,20 +1,14 @@
 import Image from "next/image";
 import { parseISO, format } from "date-fns";
-
-import ContentSnippet from "../layouts/content-snippet";
 import { CATEGORIES } from "../constants/core";
 
 const PostPreview = ({ frontMatter }) => {
-  console.log("frontMatter", frontMatter);
-
   let category = CATEGORIES.filter((c) =>
     c.route.includes(frontMatter.category)
   );
 
-  console.log(category);
-
   return (
-    <article className="flex flex-col justify-between p-6 bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+    <article className="flex flex-col justify-between max-w-prose mx-auto p-6 bg-gray-100 rounded-lg shadow-sm overflow-hidden">
       <div>
         <figure
           className="-mx-6 -mt-6"

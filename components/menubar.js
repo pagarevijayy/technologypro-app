@@ -19,7 +19,7 @@ const Menubar = () => {
   ];
 
   return (
-    <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-50">
+    <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-30">
       <Container>
         <div className="flex justify-between items-center">
           <div className="font-poppins font-bold text-lg tracking-wide">

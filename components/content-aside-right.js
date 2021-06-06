@@ -10,6 +10,13 @@ const ContentAsideRight = () => {
       <ContentSnippet>
         <p>AD</p>
       </ContentSnippet>
+      <div
+        className="bg-white p-4 rounded-lg bg-opacity-40 shadow-sm text-center"
+        style={{ position: "sticky", top: "80px" }}
+      >
+        <p> Want to display an ad here? </p>
+        <p> Contact us.</p>
+      </div>
     </div>
   );
 };
