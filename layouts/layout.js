@@ -14,7 +14,7 @@ export default function Layout({ children }) {
       <Menubar />
       <main>
         <Container>
-          <div className="md:grid md:grid-cols-3 gap-6 mt-4 pb-8">
+          <div className="md:grid md:grid-cols-3 gap-6 mt-4 pb-8 min-h-screen">
             <div className="col-span-2 mt-4">{children}</div>
             <div className="col-span-1 mt-4">
               <ContentAsideRight />

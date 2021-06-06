@@ -5,7 +5,6 @@ import { parseISO, format } from "date-fns";
 import { CATEGORIES } from "../constants/core";
 
 const HeroPost = ({ frontMatter }) => {
-  console.log("hero", frontMatter);
   let category = CATEGORIES.filter((c) =>
     c.route.includes(frontMatter.category)
   );

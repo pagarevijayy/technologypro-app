@@ -19,9 +19,9 @@
 
 - [ ] primary page
 - [ ] category page
-- [ ] blog page
+- [x] blog page
 - [ ] dynamic: meta, menu
-- [ ] make search work
+- [x] make search work
 - [x] component: footer
 - [ ] mobile header - menu
 - [ ] deploy!

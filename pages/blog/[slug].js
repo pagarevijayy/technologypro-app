@@ -1,7 +1,6 @@
 import { MDXRemote } from "next-mdx-remote";
-
 import { getFileNames, getFileBySlug } from "../../lib/mdx-to-post";
-
+import { PROJECT_ROOT_URL } from "../../constants/core";
 import Layout from "../../layouts/layout";
 import ContentSnippet from "../../layouts/content-snippet";
 
@@ -10,12 +9,27 @@ import PostContent from "../../components/post-content";
 import MDXComponents from "../../components/mdxComponents";
 
 const BlogPost = ({ mdxSource, frontMatter }) => {
+  /**
+   * @todo: Update favicon along with title.
+   */
+  const meta = {
+    title: frontMatter.title,
+    description: frontMatter.summary,
+    date: frontMatter.publishedAt,
+    image: `${PROJECT_ROOT_URL}${frontMatter.image}`,
+  };
+
   return (
     <>
-      <Meta />
+      <Meta
+        title={meta.title}
+        description={meta.description}
+        date={meta.date}
+        image={meta.image}
+      />
       <Layout>
         <ContentSnippet>
-          <PostContent>
+          <PostContent frontMatter={frontMatter}>
             <MDXRemote
               {...mdxSource}
               components={{
@@ -47,8 +61,6 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const post = await getFileBySlug("blog", params.slug);
-
-  // const posts = await getAllFilesFrontMatter("blog");
 
   return { props: { ...post } };
 }
