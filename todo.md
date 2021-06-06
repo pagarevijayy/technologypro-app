@@ -21,6 +21,7 @@
 - [ ] category page
 - [ ] blog page
 - [ ] dynamic: meta, menu
+- [ ] make search work
 - [x] component: footer
 - [ ] mobile header - menu
 - [ ] deploy!
