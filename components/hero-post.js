@@ -20,7 +20,6 @@ const HeroPost = ({ frontMatter }) => {
                 src={frontMatter.image}
                 layout="fill"
                 objectFit="cover"
-                priority
               />
             </figure>
           </div>
