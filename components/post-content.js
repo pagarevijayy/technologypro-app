@@ -2,7 +2,7 @@ import Link from "next/link";
 import { parseISO, format } from "date-fns";
 
 const PostContent = ({ frontMatter, children }) => {
-  console.log("frontMatter", frontMatter);
+  // console.log("frontMatter", frontMatter);
 
   return (
     <div className="max-w-prose mx-auto p-2 md:p-5">
