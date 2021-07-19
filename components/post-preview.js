@@ -12,7 +12,10 @@ const PostPreview = ({ frontMatter }) => {
   return (
     <Link href={`/blog/${frontMatter.slug}`}>
       <a className="block md:contents">
-        <article className="flex flex-col justify-between max-w-md mx-auto bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+        <article
+          className="flex flex-col justify-between max-w-md mx-auto bg-gray-100
+         rounded-lg shadow-sm overflow-hidden transform transition hover:-translate-y-0.5"
+        >
           <div>
             <figure className="relative h-56 w-full">
               <Image

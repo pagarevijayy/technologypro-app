@@ -47,12 +47,12 @@ const Menubar = () => {
 
   const getPremiumButton = (
     <li className="text-center md:pl-2">
-      <Link href="/">
-        <button className="w-full md:w-auto px-4 py-2 font-medium focus:outline-none text-gray-200 bg-indigo-500 rounded-3xl">
-          {" "}
-          Get Premium{" "}
-        </button>
-      </Link>
+      <button
+        className="w-full md:w-32 px-4 py-2 font-medium focus:outline-none text-gray-200 bg-indigo-500 rounded-3xl 
+        transform transition hover:-translate-y-0.5 hover:bg-indigo-400 active:bg-indigo-600"
+      >
+        Subscribe
+      </button>
     </li>
   );
 
@@ -60,7 +60,7 @@ const Menubar = () => {
     <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-10">
       <Container>
         <div className="flex justify-between items-center">
-          <div className="font-poppins font-bold text-lg tracking-wide">
+          <div className="font-poppins font-bold text-lg tracking-wide cursor-pointer select-none transform transition hover:-translate-y-0.5">
             <Link href="/">{brandLogo}</Link>
           </div>
           <div>
@@ -68,7 +68,10 @@ const Menubar = () => {
               <ul className="flex items-center space-x-6 font-medium">
                 {menuItems.map((item, index) => {
                   return (
-                    <li key={item.title + `${index}`}>
+                    <li
+                      key={item.title + `${index}`}
+                      className="transform transition hover:-translate-y-0.5"
+                    >
                       <Link href={item.route}>
                         <a>{item.title}</a>
                       </Link>

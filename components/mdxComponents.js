@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+/** To wrap an Image tag inside an <a> (anchor tag) in the .mdx file*/
 const CustomLink = (props) => {
   const href = props.href;
   const isInternalLink = href && (href.startsWith("/") || href.startsWith("#"));

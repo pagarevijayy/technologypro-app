@@ -1,11 +1,13 @@
 /** Default Meta */
-export const PROJECT_TITLE = "Technology Pro | Tech News, Tips & Tricks ";
+export const PROJECT_TITLE = "Technology Pro | Tech Trends, Tips & Tricks! ";
 export const PROJECT_DESCRIPTION =
-  "Find the latest technology news and expert tech product reviews. Learn about the latest gadgets and consumer tech products for entertainment, gaming, lifestyle and more.";
+  "Get to know what's happening in the technology world. Learn about the latest technology trends, software tools, their tips & tricks, and much more.";
 export const PROJECT_TYPE = "website";
-export const PROJECT_ROOT_URL = "https://your-site.com";
-export const PROJECT_BANNER_URL = "https://your-site.com/banner-here.png";
-export const TWITTER_HANDLE = "@your_site";
+export const PROJECT_ROOT_URL = "https://technologypro.in";
+export const PROJECT_BANNER_URL =
+  "https://technologypro.in/static/assets/banner_techpro.png";
+export const TWITTER_HANDLE = "";
+export const CONTACT_EMAIL = "pagarevijayy+techpro@gmail.com";
 
 //** To be used at places other than Meta */
 export const PROJECT_NAME = "Technology Pro";
@@ -13,15 +15,15 @@ export const COPYRIGHT_NAME = "Technology Pro";
 
 export const CATEGORIES = [
   {
-    title: "Android",
-    route: "/category/android",
-  },
-  {
     title: "How to",
     route: "/category/how-to",
   },
   {
     title: "Social Media",
     route: "/category/social-media",
+  },
+  {
+    title: "Programming",
+    route: "/category/programming",
   },
 ];
