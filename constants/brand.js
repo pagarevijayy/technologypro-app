@@ -5,8 +5,8 @@ export const brandLogo = (
 );
 
 /** Featured Posts on the home screen (their frontMatter data) */
-export const heroFrontMatterData = {
-  heroOne: {
+export const heroFrontMatterData = [
+  {
     wordCount: 664,
     readingTime: {
       text: "4 min read",
@@ -22,19 +22,26 @@ export const heroFrontMatterData = {
     image: "/static/images/instagram-shadowban/ban.png",
     category: "social-media",
   },
-  heroTwo: {
-    title: "Web Fonts in 2021",
-    publishedAt: "2021-01-13",
-    summary:
-      "Learn the best practices for high-performance sites using web fonts, updated for 2021.",
-    image: "/static/images/fonts/banner.png",
-    category: "how-to",
-    readingTime: {
-      text: "5 min read",
-      minutes: 4.205,
-      time: 252300,
-      words: 841,
-    },
-    slug: "fonts",
+];
+
+/** Advertisement/Brand Promotions Content */
+export const adPromotionsData = [
+  {
+    title: "ezCreatives",
+    description: "Auto-generate images for your social media feed.",
+    redirectURL: "https://www.ezcreatives.in",
+    redirectTag: "www.ezcreatives.in",
+    imageURL: "/static/ads/eragap/ez_creatives.png",
+    imageWidth: "600",
+    imageHeight: "200",
   },
-};
+  {
+    title: "We The Sapiens",
+    description: "Philosophy across ages, cultures, and professions.",
+    redirectURL: "https://www.instagram.com/wethesapiens_",
+    redirectTag: "@wethesapiens_",
+    imageURL: "/static/ads/eragap/wts.png",
+    imageWidth: "600",
+    imageHeight: "200",
+  },
+];

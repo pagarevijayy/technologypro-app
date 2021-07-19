@@ -5,7 +5,7 @@ const NotFound = () => {
     <div className="p-6">
       <figure className="flex justify-center items-center">
         <Image
-          src="/static/images/empty_result.svg"
+          src="/static/assets/empty_result.svg"
           height={150}
           width={180}
         ></Image>
