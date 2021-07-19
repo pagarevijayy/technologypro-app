@@ -47,14 +47,12 @@ const Menubar = () => {
 
   const getPremiumButton = (
     <li className="text-center md:pl-2">
-      <Link href="/">
-        <button
-          className="w-full md:w-32 px-4 py-2 font-medium focus:outline-none text-gray-200 bg-indigo-500 rounded-3xl 
+      <button
+        className="w-full md:w-32 px-4 py-2 font-medium focus:outline-none text-gray-200 bg-indigo-500 rounded-3xl 
         transform transition hover:-translate-y-0.5 hover:bg-indigo-400 active:bg-indigo-600"
-        >
-          Subscribe
-        </button>
-      </Link>
+      >
+        Subscribe
+      </button>
     </li>
   );
 

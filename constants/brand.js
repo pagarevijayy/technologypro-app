@@ -7,6 +7,22 @@ export const brandLogo = (
 /** Featured Posts on the home screen (their frontMatter data) */
 export const heroFrontMatterData = [
   {
+    wordCount: 424,
+    readingTime: {
+      text: "3 min read",
+      minutes: 2.11,
+      time: 126600,
+      words: 422,
+    },
+    slug: "remember-multiple-passwords",
+    title: "How to Remember Multiple Passwords",
+    publishedAt: "2021-07-19",
+    summary:
+      "With power comes responsibility, and with every site you visit comes a new login ID and a password. Here are the tricks by which you can remember all your passwords.",
+    image: "/static/images/remember-multiple-passwords/password.jpg",
+    category: "how-to",
+  },
+  {
     wordCount: 664,
     readingTime: {
       text: "4 min read",
