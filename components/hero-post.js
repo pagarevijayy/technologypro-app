@@ -12,7 +12,10 @@ const HeroPost = ({ frontMatter }) => {
   return (
     <Link href={`/blog/${frontMatter.slug}`}>
       <a className="block">
-        <article className="max-w-sm mx-auto sm:max-w-4xl sm:flex bg-gray-100 rounded-lg shadow-sm overflow-hidden">
+        <article
+          className="max-w-sm mx-auto sm:max-w-4xl sm:flex bg-gray-100 
+        rounded-lg shadow-sm overflow-hidden transform transition hover:-translate-y-0.5"
+        >
           <div>
             <figure className="relative h-56 w-full sm:w-64 md:w-48 lg:w-64 xl:w-80  sm:h-full">
               <Image

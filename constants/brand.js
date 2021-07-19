@@ -4,22 +4,23 @@ export const brandLogo = (
   </a>
 );
 
+/** Featured Posts on the home screen (their frontMatter data) */
 export const heroFrontMatterData = {
   heroOne: {
-    title: "Beginner’s Guide to the Programming Portfolio",
-    publishedAt: "2017-02-24",
-    summary:
-      "Learn how to create your programming portfolio from the ground up, including tips and tricks I learned building my own. Learn how to create your programming portfolio from the ground up, including tips and tricks I learned building my own.",
-    image:
-      "/static/images/beginners-guide-to-the-programming-portfolio/banner.png",
-    category: "android",
+    wordCount: 664,
     readingTime: {
-      text: "12 min read",
-      minutes: 11.095,
-      time: 665700,
-      words: 2219,
+      text: "4 min read",
+      minutes: 3.31,
+      time: 198600,
+      words: 662,
     },
-    slug: "guide-to-portfolio",
+    slug: "instagram-shadowban",
+    title: "Instagram Shadowban - All You Need to Know",
+    publishedAt: "2021-07-19",
+    summary:
+      "Ever wondered why your Instagram reach has suddenly gone down? The reason is you might be shadowbanned. Shadowban means restricting a user's reach on the platform for some official reason.",
+    image: "/static/images/instagram-shadowban/ban.png",
+    category: "social-media",
   },
   heroTwo: {
     title: "Web Fonts in 2021",
