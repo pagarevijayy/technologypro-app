@@ -13,4 +13,11 @@ module.exports = {
       },
     ];
   },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./lib/generate-sitemap.js");
+    }
+
+    return config;
+  },
 };
