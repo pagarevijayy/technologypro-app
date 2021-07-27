@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: enter-your-complete-sitemap-url-here
+Sitemap: https://technologypro.in/sitemap.xml
