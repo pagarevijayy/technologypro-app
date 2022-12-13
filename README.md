@@ -2,7 +2,7 @@ Demo: [Watch Live](https://www.technologypro.in/)
 
 ## The Blog App (Technology Pro)
 
-A blog app that uses `.mdx` file for content and converts it to blog post. 
+A blog app that uses `.mdx` file for content and converts it to a blog post. 
 
 SEO-friendly, feature-rich, mobile-first responsive web app. Can be used on production.
 
