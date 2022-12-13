@@ -1,8 +1,8 @@
 Demo: [Watch Live](https://www.technologypro.in/)
 
-## The Blog App
+## The Blog App (Technology Pro)
 
-A blog app that uses `.mdx` files for content and converts it to blog posts. 
+A blog app that uses `.mdx` file for content and converts it to blog post. 
 
 SEO-friendly, feature-rich, mobile-first responsive web app. Can be used on production.
 
@@ -16,7 +16,9 @@ SEO-friendly, feature-rich, mobile-first responsive web app. Can be used on prod
 
 #### Nerd Stats
 1. Auto-generates sitemap
-2. Dynamic Metadata for posts
+2. Dynamic metadata for posts (SEO optimised)
 3. Special component for parsing .mdx file and converting it to a blog-post (pre-rendering approach)
 4. Google analytics integrated
-4. Uses different components for rendering views like layouts, posts, and ads.
+4. Uses different components for rendering different views like layouts, posts, ads, etc.
+
+Thanks for reading. Do have a look at it. [Here 🎉](https://www.technologypro.in/) 
