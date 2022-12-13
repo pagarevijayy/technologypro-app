@@ -1,9 +1,9 @@
 {
-  "name": "the-blog-app",
+  "name": "technology-pro-blog-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "env TAILWIND_MODE=watch NODE_ENV=development next dev -H 192.168.0.106 -p 3001",
+    "dev": "env TAILWIND_MODE=watch NODE_ENV=development next dev -H 192.168.0.104 -p 3000",
     "build": "next build",
     "start": "next start"
   },
