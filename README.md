@@ -1,21 +1,22 @@
-# The Blog App
+Demo: [Watch Live](https://www.technologypro.in/)
 
-(update later!)
+## The Blog App
 
-## Note
+A blog app that uses `.mdx` files for content and converts it to blog posts. 
 
-1. Hero post is hard-coded (featured or most popular)
-2. Don't use images with too much text (looks ugly)
+SEO-friendly, feature-rich, mobile-first responsive web app. Can be used on production.
 
-## MDX File Rules
+#### Tech Stack
 
-1. Double check **frontMatter** details and format.
-2. FrontMatter:
-   1. `filename is the slug.`
-   2. `title {string}, publishedAt {yyyy-mm-dd}, summary {string - at least two lines}, image{"/path-to-image-from-public-root"}, category:{"route-string" e.g. 'how-to' or 'social-media'}`
-   3. Sample (link later)
-3. Internal Links start with `'/'` or `'#'`
-4. For internal images, use `'next/Image'` component.
-5. External image needs to be configured in `next.cong.js`, so avoid.
-6. To wrap an `<Image>` inside an link use `<a> </a>`. Else the normal .md format will do.
-7. Declare new components if needed.
+- Next.js (react.js) 
+- Tailwindcss
+- Gray-matter, remark, mdx prism (stuff related to parsing .mdx files)
+- Date-fns, globby, reading-time (as helper libraries)
+- Vercel
+
+#### Nerd Stats
+1. Auto-generates sitemap
+2. Dynamic Metadata for posts
+3. Special component for parsing .mdx file and converting it to a blog-post (pre-rendering approach)
+4. Google analytics integrated
+4. Uses different components for rendering views like layouts, posts, and ads.
