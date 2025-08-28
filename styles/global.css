@@ -9,32 +9,44 @@
   --font-poppins: "Poppins", sans-serif;
 }
 
-.prose .anchor {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: -0.9em;
-  cursor: pointer;
-  text-decoration: none;
-  opacity: 0;
-}
+@layer utilities {
+  .prose :where(h1,h2,h3,h4,h5,h6) { 
+    position: relative; 
+     @apply scroll-mt-25;
+  }
 
-.prose .anchor:after {
-  @apply text-gray-300;
-  content: "#";
-}
+  .prose .anchor {
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 100%;
+    left: -0.9em;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0;
+  }
+  
+  .prose .anchor::after { 
+    @apply text-gray-300; content: "#"; 
+  }
+  
+  .prose :where(h1,h2,h3,h4,h5,h6):hover .anchor { 
+    opacity: 1; 
+  }
 
-.anchor:hover {
-  opacity: 1;
-}
-
-.prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
-}
-
-.prose > :first-child {
-  /* Override removing top margin, causing layout shift */
-  margin-top: 1.25em !important;
-  margin-bottom: 1.25em !important;
+  /* Prevent layout shift for first element in prose */
+  .prose > :first-child {
+    margin-top: 1.25em !important;
+    margin-bottom: 1.25em !important;
+  }
+  
+  .prose a {
+    @apply text-blue-500;
+  }
+  .prose a:hover {
+    @apply text-blue-700;
+  }
+  .prose a:visited {
+    @apply text-indigo-600;
+  }
 }
