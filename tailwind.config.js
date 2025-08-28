@@ -7,16 +7,4 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
     "./constants/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        poppins: ["Poppins", ...fontFamily.sans],
-        sans: ["Roboto", ...fontFamily.sans],
-      },
-    },
-  },
-  plugins: [
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/line-clamp"),
-  ],
 };
