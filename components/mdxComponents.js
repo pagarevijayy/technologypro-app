@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 /** To wrap an Image tag inside an <a> (anchor tag) in the .mdx file*/
 const CustomLink = (props) => {
@@ -8,7 +8,7 @@ const CustomLink = (props) => {
 
   if (isInternalLink) {
     return (
-      <Link href={href}>
+      <Link href={href} legacyBehavior>
         <a {...props} />
       </Link>
     );

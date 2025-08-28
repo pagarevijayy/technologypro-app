@@ -61,7 +61,7 @@ const Menubar = () => {
       <Container>
         <div className="flex justify-between items-center">
           <div className="font-poppins font-bold text-lg tracking-wide cursor-pointer select-none transform transition hover:-translate-y-0.5">
-            <Link href="/">{brandLogo}</Link>
+            <Link href="/" legacyBehavior>{brandLogo}</Link>
           </div>
           <div>
             <nav className="laptop-nav hidden md:block">
@@ -72,7 +72,7 @@ const Menubar = () => {
                       key={item.title + `${index}`}
                       className="transform transition hover:-translate-y-0.5"
                     >
-                      <Link href={item.route}>
+                      <Link legacyBehavior href={item.route}>
                         <a>{item.title}</a>
                       </Link>
                     </li>
@@ -105,7 +105,7 @@ const Menubar = () => {
                 key={item.title + `${index}`}
                 onClick={toggleSidebar}
               >
-                <Link href={item.route}>
+                <Link legacyBehavior href={item.route}>
                   <a>{item.title}</a>
                 </Link>
               </li>

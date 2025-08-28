@@ -7,7 +7,7 @@ const PostContent = ({ frontMatter, children }) => {
   return (
     <div className="max-w-prose mx-auto p-2 md:p-5">
       <div>
-        <Link href={`/blog/${frontMatter.slug}`}>
+        <Link legacyBehavior href={`/blog/${frontMatter.slug}`}>
           <a>
             <h1 className="text-2xl font-poppins font-bold">
               {frontMatter.title}
