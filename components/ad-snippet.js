@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ContentSnippet from "../layouts/content-snippet";
 
 export default function AdSnippet({
