@@ -10,7 +10,7 @@ const HeroPost = ({ frontMatter }) => {
   );
 
   return (
-    <Link href={`/blog/${frontMatter.slug}`}>
+    <Link href={`/blog/${frontMatter.slug}`} legacyBehavior>
       <a className="block">
         <article
           className="max-w-sm mx-auto sm:max-w-4xl sm:flex bg-gray-100 

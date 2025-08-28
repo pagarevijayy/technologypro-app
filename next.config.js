@@ -17,7 +17,6 @@ module.exports = {
     if (isServer) {
       require("./lib/generate-sitemap.js");
     }
-
     return config;
   },
 };
