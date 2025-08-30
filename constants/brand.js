@@ -7,20 +7,19 @@ export const brandLogo = (
 /** Featured Posts on the home screen (their frontMatter data) */
 export const heroFrontMatterData = [
   {
-    wordCount: 424,
-    readingTime: {
-      text: "3 min read",
-      minutes: 2.11,
-      time: 126600,
-      words: 422,
+    "title": "Ather Energy Unveils Pothole Alerts for Indian Cities: A Tech Breakthrough at Community Day 2025",
+    "summary": "Ather Energy wows the Indian tech scene with pothole alerts built into its scooter maps, unveiled at Community Day 2025. Read on for the latest on this innovative move across Bengaluru, Delhi, Chennai, and Mumbai!",
+    "publishedAt": "2025-08-31",
+    "author": "TechPro",
+    "category": "news",
+    "image": "/static/images/potholes-map-ather/maps-presentation.jpeg",
+    "readingTime": {
+      "text": "2 min read",
+      "minutes": 1.65,
+      "time": 99000,
+      "words": 330
     },
-    slug: "remember-multiple-passwords",
-    title: "How to Remember Multiple Passwords",
-    publishedAt: "2021-07-19",
-    summary:
-      "With power comes responsibility, and with every site you visit comes a new login ID and a password. Here are the tricks by which you can remember all your passwords.",
-    image: "/static/images/remember-multiple-passwords/password.jpg",
-    category: "how-to",
+    "slug": "potholes-map-ather"
   },
   {
     wordCount: 664,
@@ -45,7 +44,7 @@ export const adPromotionsData = [
   {
     title: "ezCreatives",
     description: "Auto-generate images for your social media feed.",
-    redirectURL: "https://www.ezcreatives.in",
+    redirectURL: "https://app-ezcreatives.vercel.app/",
     redirectTag: "www.ezcreatives.in",
     imageURL: "/static/ads/eragap/ez_creatives.png",
     imageWidth: "600",

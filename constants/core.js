@@ -23,7 +23,7 @@ export const CATEGORIES = [
     route: "/category/social-media",
   },
   {
-    title: "Programming",
-    route: "/category/programming",
+    title: "News",
+    route: "/category/news",
   },
 ];

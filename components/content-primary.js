@@ -17,6 +17,8 @@ const ContentPrimary = ({ posts, isCategoryRoute }) => {
       frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
     );
 
+  // console.log('get data for hero post #heroPostData', posts);
+
   return (
     <div>
       <div className="relative w-full mb-4">
