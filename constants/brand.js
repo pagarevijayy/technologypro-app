@@ -7,6 +7,21 @@ export const brandLogo = (
 /** Featured Posts on the home screen (their frontMatter data) */
 export const heroFrontMatterData = [
   {
+    "title": "India's Chip Revolution: First Made-in-India Semiconductors Shine at Semicon 2025!",
+    "summary": "India takes a giant step towards tech self-reliance with the launch of indigenous semiconductor chips at Semicon India 2025. Discover the key highlights, from the Vikram 32-bit processor to massive investments boosting the ecosystem.",
+    "publishedAt": "2025-09-03",
+    "author": "TechPro",
+    "category": "news",
+    "image": "/static/images/semicon-2025/chips.jpeg",
+    "slug": "semicon-2025",
+    "readingTime": {
+      "text": "3 min read",
+      "minutes": 2.95,
+      "time": 177000,
+      "words": 590
+    }
+  },
+  {
     "title": "Ather Energy Unveils Pothole Alerts for Indian Cities: A Tech Breakthrough at Community Day 2025",
     "summary": "Ather Energy wows the Indian tech scene with pothole alerts built into its scooter maps, unveiled at Community Day 2025. Read on for the latest on this innovative move across Bengaluru, Delhi, Chennai, and Mumbai!",
     "publishedAt": "2025-08-31",
@@ -20,22 +35,6 @@ export const heroFrontMatterData = [
       "words": 330
     },
     "slug": "potholes-map-ather"
-  },
-  {
-    wordCount: 664,
-    readingTime: {
-      text: "4 min read",
-      minutes: 3.31,
-      time: 198600,
-      words: 662,
-    },
-    slug: "instagram-shadowban",
-    title: "Instagram Shadowban - All You Need to Know",
-    publishedAt: "2021-07-19",
-    summary:
-      "Ever wondered why your Instagram reach has suddenly gone down? The reason is you might be shadowbanned. Shadowban means restricting a user's reach on the platform for some official reason.",
-    image: "/static/images/instagram-shadowban/ban.png",
-    category: "social-media",
   },
 ];
 
