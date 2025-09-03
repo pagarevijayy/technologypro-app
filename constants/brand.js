@@ -7,6 +7,21 @@ export const brandLogo = (
 /** Featured Posts on the home screen (their frontMatter data) */
 export const heroFrontMatterData = [
   {
+    "title": "GST Reforms 2025: How Tech Gadgets and Renewables Just Got Cheaper in India",
+    "summary": "Dive into the latest GST changes from the 56th Council meeting and see how they benefit tech products, from TVs to renewable energy devices.",
+    "publishedAt": "2025-09-04",
+    "author": "TechPro",
+    "category": "news",
+    "image": "/static/images/gst-reforms-2025/gst-reform-hero.png",
+    "slug": "gst-reforms-2025",
+    "readingTime": {
+      "text": "3 min read",
+      "minutes": 2.72,
+      "time": 163200,
+      "words": 544
+    }
+  },
+  {
     "title": "India's Chip Revolution: First Made-in-India Semiconductors Shine at Semicon 2025!",
     "summary": "India takes a giant step towards tech self-reliance with the launch of indigenous semiconductor chips at Semicon India 2025. Discover the key highlights, from the Vikram 32-bit processor to massive investments boosting the ecosystem.",
     "publishedAt": "2025-09-03",
