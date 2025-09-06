@@ -9,9 +9,6 @@ import PostContent from "../../components/post-content";
 import MDXComponents from "../../components/mdxComponents";
 
 const BlogPost = ({ mdxSource, frontMatter }) => {
-  /**
-   * @todo: Update favicon along with title.
-   */
   const meta = {
     title: frontMatter.title,
     description: frontMatter.summary,

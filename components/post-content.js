@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { parseISO, format } from "date-fns";
+import ShareButtons from "./shareButtons";
 
 const PostContent = ({ frontMatter, children }) => {
-  // console.log("frontMatter", frontMatter);
 
   return (
     <div className="max-w-prose mx-auto p-2 md:p-5">
@@ -21,9 +21,21 @@ const PostContent = ({ frontMatter, children }) => {
           </p>
           <p className="pl-2">{frontMatter.readingTime.text}</p>
         </div>
+
+        <ShareButtons
+          title={frontMatter.title}
+          variant="compact"
+        />
+
       </div>
 
       <div className="prose">{children}</div>
+
+      <ShareButtons
+        title={frontMatter.title}
+        className="mt-8"
+      />
+
     </div>
   );
 };
