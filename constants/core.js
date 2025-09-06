@@ -15,7 +15,11 @@ export const COPYRIGHT_NAME = "Technology Pro";
 
 export const CATEGORIES = [
   {
-    title: "How to",
+    title: "News",
+    route: "/category/news",
+  },
+  {
+    title: "How-To",
     route: "/category/how-to",
   },
   {
@@ -23,7 +27,7 @@ export const CATEGORIES = [
     route: "/category/social-media",
   },
   {
-    title: "News",
-    route: "/category/news",
+    title: "Stories",
+    route: "/category/stories",
   },
 ];

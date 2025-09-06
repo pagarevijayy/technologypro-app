@@ -7,6 +7,21 @@ export const brandLogo = (
 /** Featured Posts on the home screen (their frontMatter data) */
 export const heroFrontMatterData = [
   {
+    "title": "5 Essential Government Apps Every Indian Should Have in 2025",
+    "summary": "Explore top Indian government apps like mParivahan, DigiYatra, and more, with their key benefits for everyday convenience and efficiency.",
+    "publishedAt": "2025-09-06",
+    "author": "TechPro",
+    "category": "how-to",
+    "image": "/static/images/essential-government-apps-india-2025/gov-apps-blog-hero.png",
+    "slug": "essential-government-apps-india-2025",
+    "readingTime": {
+      "text": "4 min read",
+      "minutes": 3.095,
+      "time": 185700,
+      "words": 619
+    }
+  },
+  {
     "title": "GST Reforms 2025: How Tech Gadgets and Renewables Just Got Cheaper in India",
     "summary": "Dive into the latest GST changes from the 56th Council meeting and see how they benefit tech products, from TVs to renewable energy devices.",
     "publishedAt": "2025-09-04",
