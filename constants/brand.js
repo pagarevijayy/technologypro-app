@@ -71,10 +71,19 @@ export const heroFrontMatterData = [
 /** Advertisement/Brand Promotions Content */
 export const adPromotionsData = [
   {
+    title: "Weekly - Work Tracker",
+    description: "Plan your week, track your goals, and stay productive.",
+    redirectURL: "https://weekly-app.technologypro.in/",
+    // redirectTag: "weekly-app.technologypro.in",
+    imageURL: "/static/ads/eragap/weekly-work_tracker.png",
+    imageWidth: "600",
+    imageHeight: "200",
+  },
+  {
     title: "ezCreatives",
     description: "Auto-generate images for your social media feed.",
-    redirectURL: "https://app-ezcreatives.vercel.app/",
-    redirectTag: "www.ezcreatives.in",
+    redirectURL: "www.vijaypagare.in/app/ezcreatives",
+    // redirectTag: "www.ezcreatives.in",
     imageURL: "/static/ads/eragap/ez_creatives.png",
     imageWidth: "600",
     imageHeight: "200",
