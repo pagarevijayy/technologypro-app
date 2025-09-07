@@ -1,23 +1,8 @@
-import { getAllFilesFrontMatter } from '../lib/mdx-to-post';
-
 export const brandLogo = (
   <a>
     Technology <span className="text-indigo-400">PRO</span>{" "}
   </a>
 );
-
-export async function getHeroFrontMatterData(allPosts) {
-  if (!allPosts || allPosts.length === 0) {
-    allPosts = await getAllFilesFrontMatter("blog");
-  }
-
-  const featuredPosts = allPosts
-    .filter(post => post.featuredPost === true)
-    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
-    .slice(0, 3);
-
-  return featuredPosts;
-}
 
 /** Advertisement/Brand Promotions Content */
 export const adPromotionsData = [

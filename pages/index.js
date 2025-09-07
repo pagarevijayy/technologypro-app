@@ -25,7 +25,12 @@ export default function Home({ posts, heroFrontMatterData }) {
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("blog");
-  const heroFrontMatterData = await getHeroFrontMatterData(posts);
+
+  // Get hero post data based on front matter 'featuredPost'
+  const heroFrontMatterData = posts
+    .filter(post => post.featuredPost === true)
+    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+    .slice(0, 3);
 
   return { props: { posts, heroFrontMatterData } };
 }

@@ -11,7 +11,7 @@ const FeaturedPosts = ({ heroFrontMatterData }) => {
       <h3 className="font-bold text-2xl mb-4 mt-8">Featured Posts</h3>
 
       {
-        heroFrontMatterData.map((postFrontMatter, index) => (
+        heroFrontMatterData?.map((postFrontMatter, index) => (
           <HeroPost
             key={`hero_${index}`}
             frontMatter={postFrontMatter}

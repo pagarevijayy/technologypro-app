@@ -1,10 +1,37 @@
 import Image from "next/legacy/image";
 import Link from "next/link";
-
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import { parseISO, format } from "date-fns";
 import { CATEGORIES } from "../constants/core";
 
 const HeroPost = ({ frontMatter }) => {
+  const [isMounted, setIsMounted] = useState(false);
+  // Check for desktop viewport
+  const isDesktop = useMediaQuery(
+    { minWidth: 768 },
+    undefined,
+    (match) => {
+      if (isMounted) {
+        setIsMounted(match);
+      }
+    }
+  );
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Get appropriate smart crop based on viewport
+  const getSmartCrop = () => {
+    if (!isMounted) return "center"; // default for SSR
+
+    if (isDesktop) {
+      return frontMatter?.smartCrop || "center";
+    }
+    return frontMatter?.smartCropMobile || "center";
+  };
+
   let category = CATEGORIES.filter((c) =>
     c.route.includes(frontMatter.category)
   );
@@ -22,7 +49,8 @@ const HeroPost = ({ frontMatter }) => {
                 alt={frontMatter.title}
                 src={frontMatter.image}
                 layout="fill"
-                className={`object-cover ${frontMatter.smartCrop ? frontMatter.smartCrop : "object-[50%_50%]"}`}
+                className={`object-cover`}
+                objectPosition={getSmartCrop()}
               />
             </figure>
           </div>
