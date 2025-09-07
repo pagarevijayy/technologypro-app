@@ -1,7 +1,8 @@
 /** Default Meta */
 export const PROJECT_TITLE = "Technology Pro - News, Tips & Tricks! ";
 export const PROJECT_DESCRIPTION =
-  "Get to know what's happening in the technology world. Learn about the latest technology trends, software tools, their tips & tricks, and much more.";
+  "Get to know what's happening in the technology world. Latest news, tips & tricks on gadgets, apps, social media and more.";
+export const PROJECT_DESCRIPTION_ALT = "Discover the latest tech news, tips & tricks on gadgets, apps, social media and more — for everyday learners & professionals.";
 export const PROJECT_TYPE = "website";
 export const PROJECT_ROOT_URL = "https://technologypro.in";
 export const PROJECT_BANNER_URL =
