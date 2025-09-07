@@ -9,7 +9,7 @@ export const adPromotionsData = [
   {
     title: "Weekly - Work Tracker",
     description: "Plan your week, track your goals, and stay productive.",
-    redirectURL: "https://weekly-app.technologypro.in/",
+    redirectURL: "https://weekly.technologypro.in/",
     // redirectTag: "weekly-app.technologypro.in",
     imageURL: "/static/ads/eragap/weekly-work_tracker.png",
     imageWidth: "600",
@@ -18,7 +18,7 @@ export const adPromotionsData = [
   {
     title: "ezCreatives",
     description: "Auto-generate images for your social media feed.",
-    redirectURL: "www.vijaypagare.in/app/ezcreatives",
+    redirectURL: "https://ezcreatives.technologypro.in/",
     // redirectTag: "www.ezcreatives.in",
     imageURL: "/static/ads/eragap/ez_creatives.png",
     imageWidth: "600",
