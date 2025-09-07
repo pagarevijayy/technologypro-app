@@ -11,7 +11,7 @@ import {
 
 /** This is the landing page content. Hero-posts are hard-coded.*/
 
-const ContentPrimary = ({ posts, isCategoryRoute }) => {
+const ContentPrimary = ({ posts, heroFrontMatterData, isCategoryRoute }) => {
   const [searchValue, setSearchValue] = useState("");
 
   const filteredBlogPosts = posts
@@ -72,7 +72,7 @@ const ContentPrimary = ({ posts, isCategoryRoute }) => {
           />
         </svg>
       </div>
-      {!searchValue && !isCategoryRoute && <FeaturedPosts />}
+      {!searchValue && !isCategoryRoute && <FeaturedPosts heroFrontMatterData={heroFrontMatterData} />}
 
       <h3 className="font-bold text-2xl mb-4 mt-8">All Posts</h3>
       {!filteredBlogPosts.length && <NotFound />}
