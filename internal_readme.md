@@ -1,21 +1,48 @@
 # The Blog App
 
-The blog app
+A comprehensive guide for maintaining and contributing to the Blog App project.
+
+## Overview
+
+This document outlines best practices, conventions, and rules for working with blog content, especially MDX files, within this repository.
+
+## General Guidelines
+
+- Keep content clear, concise, and accessible.
+- Maintain a consistent tone and style throughout all posts.
+- Review your changes before submitting a pull request.
 
 ## Note
 
-1. Hero post is hard-coded (featured or most popular)
-2. Don't use images with too much text (looks ugly)
+- Avoid using images with excessive text, as it can negatively impact readability and aesthetics.
 
 ## MDX File Rules
 
-1. Double check **frontMatter** details and format.
-2. FrontMatter:
-   1. `filename is the slug.`
-   2. `title {string}, publishedAt {yyyy-mm-dd}, summary {string - at least two lines}, image{"/path-to-image-from-public-root"}, category:{"route-string" e.g. 'how-to' or 'social-media'}`
-   3. Sample (link later)
-3. Internal Links start with `'/'` or `'#'`
-4. For internal images, use `'next/Image'` component.
-5. External image needs to be configured in `next.cong.js`, so avoid.
-6. To wrap an `<Image>` inside an link use `<a> </a>`. Else the normal .md format will do.
-7. Declare new components if needed.
+1. **FrontMatter**
+   - Double-check all **frontMatter** details and formatting.
+   - Required fields:
+     - `filename`: The slug for the post.
+     - `title`: String.
+     - `publishedAt`: Date in `yyyy-mm-dd` format.
+     - `summary`: String, at least two lines.
+     - `image`: Path from the public root, e.g., `"/images/example.jpg"`.
+     - `category`: Route string, e.g., `'how-to'` or `'social-media'`.
+   - *Sample frontMatter will be provided soon.*
+
+2. **Internal Links**
+   - Use `'/'` for root-relative links or `'#'` for anchor links within the same page.
+
+3. **Images**
+   - For internal images, use the `'next/Image'` component.
+   - Avoid external images unless configured in `next.config.js`.
+   - To wrap an `<Image>` in a link, use `<a>...</a>`. Otherwise, standard Markdown image syntax is acceptable.
+
+4. **Components**
+   - Declare new components as needed for custom functionality or formatting.
+
+## Contribution
+
+- Follow the above rules for all new or updated blog posts.
+- Submit a pull request for review.
+- For questions or suggestions, contact the project maintainers.
+

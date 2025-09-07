@@ -5,12 +5,9 @@ import Meta from "../components/meta";
 import ContentPrimary from "../components/content-primary";
 
 /** 
-@todo {features}: search and pagination
-
 @description  
-- Homepage of the site
-- Display latest content
-- Logic: get all front matter and sort as per date
+This is the landing page.
+It uses getStaticProps to fetch all blog posts at build time.
 */
 export default function Home({ posts, heroFrontMatterData }) {
   return (

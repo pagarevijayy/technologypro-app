@@ -32,6 +32,7 @@ const HeroPost = ({ frontMatter }) => {
     return frontMatter?.smartCropMobile || "center";
   };
 
+  // Determine category title (can be optimized)
   let category = CATEGORIES.filter((c) =>
     c.route.includes(frontMatter.category)
   );

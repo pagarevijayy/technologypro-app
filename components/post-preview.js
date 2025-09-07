@@ -5,6 +5,7 @@ import { parseISO, format } from "date-fns";
 import { CATEGORIES } from "../constants/core";
 
 const PostPreview = ({ frontMatter }) => {
+  // Determine category title (can be optimized)
   let category = CATEGORIES.filter((c) =>
     c.route.includes(frontMatter.category)
   );
@@ -60,11 +61,3 @@ const PostPreview = ({ frontMatter }) => {
 };
 
 export default PostPreview;
-
-/* 
-@todo:
-1. Clamp text and add read more
-2. Use Image tag
-3. Date formatter
-4. Dynamic data passing
-*/

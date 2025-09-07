@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 import ContentAsideRight from "../components/content-aside-right";
 
 export default function Layout({ children }) {
-  const alertMessage = "Yipeee... We are live! 🙌 ";
+  const alertMessage = "Yipeee... We are live! 🙌";
   const showAlert = false;
 
   return (

@@ -9,7 +9,7 @@ import {
   PROJECT_DESCRIPTION_ALT,
 } from "../constants/core";
 
-/** This is the landing page content. Hero-posts are hard-coded.*/
+/** This is the landing page content.*/
 
 const ContentPrimary = ({ posts, heroFrontMatterData, isCategoryRoute }) => {
   const [searchValue, setSearchValue] = useState("");

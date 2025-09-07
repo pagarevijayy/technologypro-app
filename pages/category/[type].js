@@ -5,6 +5,14 @@ import Meta from "../../components/meta";
 import { useRouter } from "next/router";
 import ContentPrimary from "../../components/content-primary";
 
+/**
+ * Renders a blog category page, displaying posts filtered by the current category route.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Array<Object>} props.posts - Array of post front matter objects to filter and display.
+ * @returns {JSX.Element} The rendered category page with filtered posts.
+ */
 export default function BlogCategory({ posts }) {
   const router = useRouter();
 
@@ -47,7 +55,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps() {
-  /** Can be optimized by only asking for posts that are needed */
+  /** Enhacement: Can be optimized by only asking for posts that are needed */
   const posts = await getAllFilesFrontMatter("blog");
 
   return { props: { posts } };
