@@ -1,5 +1,5 @@
 /** Default Meta */
-export const PROJECT_TITLE = "Technology Pro | Tech Trends, Tips & Tricks! ";
+export const PROJECT_TITLE = "Technology Pro - News, Tips & Tricks! ";
 export const PROJECT_DESCRIPTION =
   "Get to know what's happening in the technology world. Learn about the latest technology trends, software tools, their tips & tricks, and much more.";
 export const PROJECT_TYPE = "website";
