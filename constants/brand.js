@@ -12,6 +12,7 @@ export const heroFrontMatterData = [
     "publishedAt": "2025-09-06",
     "author": "TechPro",
     "category": "how-to",
+    "smartCrop": "object-[0%_0%]",
     "image": "/static/images/essential-government-apps-india-2025/gov-apps-blog-hero.png",
     "slug": "essential-government-apps-india-2025",
     "readingTime": {

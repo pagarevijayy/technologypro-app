@@ -22,7 +22,7 @@ const HeroPost = ({ frontMatter }) => {
                 alt={frontMatter.title}
                 src={frontMatter.image}
                 layout="fill"
-                objectFit="cover"
+                className={`object-cover ${frontMatter.smartCrop ? frontMatter.smartCrop : "object-[50%_50%]"}`}
               />
             </figure>
           </div>
