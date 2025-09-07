@@ -1,5 +1,4 @@
 import { getAllFilesFrontMatter } from "../lib/mdx-to-post";
-import { getHeroFrontMatterData } from "../constants/brand";
 import Layout from "../layouts/layout";
 import Meta from "../components/meta";
 import ContentPrimary from "../components/content-primary";
@@ -14,7 +13,7 @@ export default function Home({ posts, heroFrontMatterData }) {
     <>
       <Meta />
       <Layout>
-        <ContentPrimary posts={posts} heroFrontMatterData={heroFrontMatterData}></ContentPrimary>
+        <ContentPrimary isHomePage={true} posts={posts} heroFrontMatterData={heroFrontMatterData}></ContentPrimary>
       </Layout>
     </>
   );

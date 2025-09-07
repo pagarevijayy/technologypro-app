@@ -11,7 +11,7 @@ import {
 
 /** This is the landing page content.*/
 
-const ContentPrimary = ({ posts, heroFrontMatterData, isCategoryRoute }) => {
+const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRoute }) => {
   const [searchValue, setSearchValue] = useState("");
 
   const filteredBlogPosts = posts
@@ -27,7 +27,7 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isCategoryRoute }) => {
 
   return (
     <div>
-      <div className="introduction-block pb-8 md:hidden">
+      {isHomePage && <div className="introduction-block pb-8 md:hidden">
         <ContentSnippet>
           <div>
             <h4 className="font-medium text-lg">🚀 {PROJECT_NAME}</h4>
@@ -47,7 +47,7 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isCategoryRoute }) => {
             </p>
           </div>
         </ContentSnippet>
-      </div>
+      </div>}
 
       <div className="search-box relative w-full mb-4">
         <input

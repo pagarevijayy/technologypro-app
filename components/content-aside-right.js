@@ -12,7 +12,7 @@ import { adPromotionsData } from "../constants/brand";
 const ContentAsideRight = () => {
   return (
     <div className="space-y-4">
-      <div className="introduction-block hidden md:block">
+      <div className="introduction-block">
         <ContentSnippet>
           <div>
             <h4 className="font-medium text-lg">🚀 {PROJECT_NAME}</h4>
