@@ -11,7 +11,7 @@ const HeroPost = ({ frontMatter }) => {
 
   return (
     <Link href={`/blog/${frontMatter.slug}`} legacyBehavior>
-      <a className="block">
+      <a className="hero-post block">
         <article
           className="max-w-sm mx-auto sm:max-w-4xl sm:flex bg-gray-100 
         rounded-lg shadow-sm overflow-hidden transform transition hover:-translate-y-0.5"

@@ -11,7 +11,7 @@ const PostPreview = ({ frontMatter }) => {
 
   return (
     <Link legacyBehavior href={`/blog/${frontMatter.slug}`}>
-      <a className="block md:contents">
+      <a className="article-post block">
         <article
           className="flex flex-col justify-between max-w-md mx-auto bg-gray-100
          rounded-lg shadow-sm overflow-hidden transform transition hover:-translate-y-0.5"

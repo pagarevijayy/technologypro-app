@@ -5,7 +5,7 @@ import ShareButtons from "./shareButtons";
 const PostContent = ({ frontMatter, children }) => {
 
   return (
-    <div className="max-w-prose mx-auto p-2 md:p-5">
+    <div className="article-content max-w-prose mx-auto p-2 md:p-5">
       <div>
         <Link legacyBehavior href={`/blog/${frontMatter.slug}`}>
           <a>
