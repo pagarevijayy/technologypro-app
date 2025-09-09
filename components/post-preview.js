@@ -2,13 +2,11 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 
 import { parseISO, format } from "date-fns";
-import { CATEGORIES } from "../constants/core";
+import { getCategoryName } from "../constants/core";
 
 const PostPreview = ({ frontMatter }) => {
-  // Determine category title (can be optimized)
-  let category = CATEGORIES.filter((c) =>
-    c.route.includes(frontMatter.category)
-  );
+  // Determine category name
+  let categoryName = getCategoryName(frontMatter?.category);
 
   return (
     <Link legacyBehavior href={`/blog/${frontMatter.slug}`}>
@@ -27,7 +25,7 @@ const PostPreview = ({ frontMatter }) => {
               />
             </figure>
             <div className="p-6">
-              {category[0] && (
+              {categoryName && (
                 <aside className="flex items-center font-bold text-xs text-indigo-600 uppercase">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +39,7 @@ const PostPreview = ({ frontMatter }) => {
                       clipRule="evenodd"
                     />
                   </svg>
-                  <span className="px-0.5">{category[0].title}</span>
+                  <span className="px-0.5">{categoryName}</span>
                 </aside>
               )}
               <h1 className="mt-2.5 font-poppins font-bold text-2xl line-clamp-2">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { parseISO, format } from "date-fns";
-import { CATEGORIES } from "../constants/core";
+import { getCategoryName } from "../constants/core";
 
 const HeroPost = ({ frontMatter }) => {
   const [isMounted, setIsMounted] = useState(false);
@@ -32,10 +32,8 @@ const HeroPost = ({ frontMatter }) => {
     return frontMatter?.smartCropMobile || "center";
   };
 
-  // Determine category title (can be optimized)
-  let category = CATEGORIES.filter((c) =>
-    c.route.includes(frontMatter.category)
-  );
+  // Determine category name
+  let categoryName = getCategoryName(frontMatter?.category);
 
   return (
     <Link href={`/blog/${frontMatter.slug}`} legacyBehavior>
@@ -56,7 +54,7 @@ const HeroPost = ({ frontMatter }) => {
             </figure>
           </div>
           <div className="p-6">
-            {category[0] && (
+            {categoryName && (
               <aside className="flex items-center font-bold text-xs text-indigo-600 uppercase">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +68,7 @@ const HeroPost = ({ frontMatter }) => {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span className="px-0.5">{category[0].title}</span>
+                <span className="px-0.5">{categoryName}</span>
               </aside>
             )}
 

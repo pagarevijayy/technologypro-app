@@ -34,3 +34,12 @@ export const CATEGORIES = [
     route: "/category/stories",
   },
 ];
+
+export const getCategoryName = (categoryRoute) => {
+  const category = CATEGORIES.filter((c) =>
+    c.route.toLowerCase().includes(categoryRoute)
+  );
+
+  const categoryName = category?.[0].title;
+  return categoryName || "";
+};

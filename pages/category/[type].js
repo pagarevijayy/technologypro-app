@@ -1,4 +1,4 @@
-import { CATEGORIES } from "../../constants/core";
+import { CATEGORIES, getCategoryName } from "../../constants/core";
 import { getAllFilesFrontMatter } from "../../lib/mdx-to-post";
 import Layout from "../../layouts/layout";
 import Meta from "../../components/meta";
@@ -22,16 +22,14 @@ export default function BlogCategory({ posts }) {
     frontMatter.category.toLowerCase().includes(currentRoute)
   );
 
-  let categoryName = CATEGORIES.filter((c) =>
-    c.route.toLowerCase().includes(currentRoute)
-  );
+  let categoryName = getCategoryName(currentRoute);
 
   return (
     <>
       <Meta />
       <Layout>
         <h3 className="font-poppins font-bold text-3xl py-6">
-          {categoryName[0].title}
+          {categoryName}
         </h3>
         {/* add no posts available notice */}
         <ContentPrimary
