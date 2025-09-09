@@ -2,12 +2,7 @@ import { useState } from "react";
 import NotFound from "../components/not-found";
 import FeaturedPosts from "../components/featured-posts";
 import PostPreview from "../components/post-preview";
-import ContentSnippet from "../layouts/content-snippet";
-import { FaInstagram } from 'react-icons/fa';
-import {
-  PROJECT_NAME,
-  PROJECT_DESCRIPTION_ALT,
-} from "../constants/core";
+import { IntroductionBlock } from "./micro-components";
 
 /** This is the landing page content.*/
 
@@ -27,26 +22,8 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRout
 
   return (
     <div>
-      {isHomePage && <div className="introduction-block pb-8 md:hidden">
-        <ContentSnippet>
-          <div>
-            <h4 className="font-medium text-lg">🚀 {PROJECT_NAME}</h4>
-            <p className="mt-4 text-gray-600 text-sm">{PROJECT_DESCRIPTION_ALT}</p>
-            <p className="">
-              <a
-                href="http://instagram.com/technologypro.in"
-                className="mt-4 inline-flex items-center gap-2  transition-colors duration-200 group"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaInstagram className="w-5 h-5" />
-                <span className="text-sm font-medium group-hover:underline">
-                  Follow us on Instagram
-                </span>
-              </a>
-            </p>
-          </div>
-        </ContentSnippet>
+      {isHomePage && <div className="pb-8 md:hidden">
+        <IntroductionBlock />
       </div>}
 
       <div className="search-box relative w-full mb-4">

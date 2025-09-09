@@ -1,8 +1,9 @@
 /** Default Meta */
 export const PROJECT_TITLE = "Technology Pro - News, Tips & Tricks! ";
 export const PROJECT_DESCRIPTION =
-  "Get to know what's happening in the technology world. Latest news, tips & tricks on gadgets, apps, social media and more.";
+  "Get to know what's happening in the technology world from an Indian perspective. Latest news, tips & tricks on gadgets, apps, social media and more.";
 export const PROJECT_DESCRIPTION_ALT = "Discover the latest tech news, tips & tricks on gadgets, apps, social media and more — for everyday learners & professionals.";
+export const PROJECT_DESCRIPTION_ALT_2 = "Exploring the latest in technology — gadgets, apps, social media, and the evolving digital world — through an Indian lens, for curious learners & professionals.";
 export const PROJECT_TYPE = "website";
 export const PROJECT_ROOT_URL = "https://technologypro.in";
 export const PROJECT_BANNER_URL =
