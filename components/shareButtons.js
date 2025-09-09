@@ -21,7 +21,7 @@ const ShareButtons = ({ title, className = '', variant = 'full' }) => {
     const iconSize = isCompact ? 'w-4 h-4' : 'w-5 h-5';
 
     return (
-        <div className={`${!isCompact ? 'border-t border-gray-200 pt-6' : ''} ${className}`}>
+        <div className={`social-share-buttons ${!isCompact ? 'border-t border-gray-200 pt-6' : ''} ${className}`}>
             {!isCompact && (
                 <h3 className="text-sm font-semibold text-gray-800 mb-4">
                     Share this article
