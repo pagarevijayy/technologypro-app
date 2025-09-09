@@ -1,5 +1,6 @@
 /** Default Meta */
-export const PROJECT_TITLE = "Technology Pro - News, Tips & Tricks! ";
+export const PROJECT_TITLE = "Technology Pro – Exploring the Digital World Through an Indian Lens";
+export const PROJECT_PUNCHLINE = "Tech News, Tips & Tricks";
 export const PROJECT_DESCRIPTION =
   "Get to know what's happening in the technology world from an Indian perspective. Latest news, tips & tricks on gadgets, apps, social media and more.";
 export const PROJECT_DESCRIPTION_ALT = "Discover the latest tech news, tips & tricks on gadgets, apps, social media and more — for everyday learners & professionals.";

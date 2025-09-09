@@ -1,6 +1,6 @@
 import ContentSnippet from "../layouts/content-snippet";
 import {
-    PROJECT_NAME,
+    PROJECT_PUNCHLINE,
     PROJECT_DESCRIPTION_ALT_2,
 } from "../constants/core";
 
@@ -11,7 +11,7 @@ export const IntroductionBlock = () => {
         <div className="introduction-block">
             <ContentSnippet>
                 <div>
-                    <h4 className="font-medium text-lg">🚀 {PROJECT_NAME}</h4>
+                    <h4 className="font-medium text-lg">🚀 {PROJECT_PUNCHLINE}</h4>
                     <p className="mt-4 text-gray-600 text-sm">{PROJECT_DESCRIPTION_ALT_2}</p>
                     <p className="">
                         <a
