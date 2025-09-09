@@ -10,7 +10,7 @@ import MDXComponents from "../../components/mdxComponents";
 
 const BlogPost = ({ mdxSource, frontMatter }) => {
   const meta = {
-    title: frontMatter.title,
+    title: frontMatter.seoTitle || frontMatter.title,
     description: frontMatter.summary,
     date: frontMatter.publishedAt,
     image: `${PROJECT_ROOT_URL}${frontMatter.image}`,
