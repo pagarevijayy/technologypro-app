@@ -8,7 +8,7 @@ const PostContent = ({ frontMatter, children }) => {
     <div className="article-content max-w-prose mx-auto p-2 md:p-5">
       <div>
         {frontMatter.author && (
-          <p className="text-xs text-gray-500 pb-2">By {frontMatter.author}</p>
+          <p className="text-xs text-gray-500 pb-3">By {frontMatter.author}</p>
         )}
 
         <Link legacyBehavior href={`/blog/${frontMatter.slug}`}>
