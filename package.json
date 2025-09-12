@@ -12,6 +12,7 @@
     "@tailwindcss/postcss": "^4.1.12",
     "@tailwindcss/typography": "^0.5.16",
     "date-fns": "^4.1.0",
+    "embla-carousel-react": "^8.6.0",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
     "next": "latest",
