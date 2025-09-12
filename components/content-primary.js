@@ -51,7 +51,7 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRout
       </div>
       {!searchValue && !isCategoryRoute && <FeaturedPosts heroFrontMatterData={heroFrontMatterData} />}
 
-      <h3 className="font-bold text-2xl mb-4 mt-8">All Posts</h3>
+      <h3 className="font-bold text-2xl mb-4 mt-8">Latest Posts</h3>
       {!filteredBlogPosts.length && <NotFound />}
 
       <section className="md:grid md:grid-cols-2 gap-6 mt-6 space-y-6 md:space-y-0">
