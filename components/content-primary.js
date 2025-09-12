@@ -4,10 +4,14 @@ import { FeaturedPosts } from "../components/micro-components";
 import PostPreview from "../components/post-preview";
 import { IntroductionBlock } from "./micro-components";
 
-/** This is the landing page content.*/
+/** This is the landing page (homepage) content.*/
 
 const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRoute }) => {
   const [searchValue, setSearchValue] = useState("");
+
+  if (!posts) {
+    return null
+  }
 
   const filteredBlogPosts = posts
     .sort(
