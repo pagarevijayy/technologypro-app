@@ -53,7 +53,9 @@ export default function Meta(props) {
           content={new Date(meta.date).toISOString()}
         />
       )}
-      <link rel="icon" href={emojiFaviconURL}></link>
+      <link rel="icon" href="/static/assets/favicon.ico"></link>
+      <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicons/favicon-16x16.png"></link>
+      <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicons/favicon-32x32.png"></link>
     </Head>
   );
 }
