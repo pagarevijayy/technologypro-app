@@ -1,6 +1,6 @@
 import { useState } from "react";
 import NotFound from "../components/not-found";
-import FeaturedPosts from "../components/featured-posts";
+import { FeaturedPosts } from "../components/micro-components";
 import PostPreview from "../components/post-preview";
 import { IntroductionBlock } from "./micro-components";
 

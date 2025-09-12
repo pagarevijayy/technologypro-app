@@ -4,6 +4,10 @@ import {
     PROJECT_DESCRIPTION_ALT_2,
 } from "../constants/core";
 
+import Carousel from './ui/carousel/carousel'
+import HeroPost from './hero-post'
+
+
 import { FaInstagram } from 'react-icons/fa';
 
 export const IntroductionBlock = () => {
@@ -29,5 +33,17 @@ export const IntroductionBlock = () => {
                 </div>
             </ContentSnippet>
         </div>
+    )
+}
+
+export const FeaturedPosts = ({ heroFrontMatterData }) => {
+    return (
+        <Carousel
+            items={heroFrontMatterData}
+            sectionTitle="Featured Posts"
+            renderItem={(postFrontMatter, index) => (
+                <HeroPost frontMatter={postFrontMatter} key={`hero_${index}`} />
+            )}
+        />
     )
 }

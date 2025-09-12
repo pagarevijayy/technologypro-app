@@ -92,10 +92,3 @@ const HeroPost = ({ frontMatter }) => {
 };
 
 export default HeroPost;
-
-/* 
-@todo:
-2. Use Image tag
-3. Date formatter
-4. Dynamic data passing
-*/
