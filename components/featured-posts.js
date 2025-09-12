@@ -25,10 +25,10 @@ const FeaturedPosts = ({ heroFrontMatterData }) => {
       <div className="flex justify-between items-center mb-4 mt-8">
         <h3 className="font-bold text-2xl">Featured Posts</h3>
         <div className="flex items-center space-x-2">
-          <button className="cursor-pointer p-2 rounded-full bg-gray-200 hover:bg-gray-300" onClick={scrollPrev}>
+          <button className="cursor-pointer p-2 rounded-full bg-gray-200 hover:bg-gray-300 active:bg-gray-300" onClick={scrollPrev}>
             <FaChevronLeft />
           </button>
-          <button className="cursor-pointer p-2 rounded-full bg-gray-200 hover:bg-gray-300" onClick={scrollNext}>
+          <button className="cursor-pointer p-2 rounded-full bg-gray-200 hover:bg-gray-300 active:bg-gray-300" onClick={scrollNext}>
             <FaChevronRight />
           </button>
         </div>
