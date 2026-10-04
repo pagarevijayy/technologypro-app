@@ -15,7 +15,7 @@
     "embla-carousel-react": "^8.6.0",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
-    "next": "latest",
+    "next": "15.5.8",
     "next-mdx-remote": "^5.0.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
