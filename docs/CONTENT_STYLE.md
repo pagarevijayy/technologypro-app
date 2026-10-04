@@ -48,9 +48,46 @@ This repo publishes short, practical tech writing for an India-focused audience.
 1. Gather source material from RSS, Twitter/X, Reddit, HackerNews, ProductHunt, or other trusted feeds.
 2. Pick one hot topic or one evergreen topic.
 3. Write the article with the style above.
-4. Publish as a new MDX file under `data/blog/`.
-5. Add a matching hero image path and update the sitemap.
-6. Repurpose the post for Instagram/newsletter/social when needed.
+4. Generate a relevant hero image for the article, or create a copy-paste image prompt and send it to ChatGPT/Grok.
+5. Save the image under the matching `public/static/images/<slug>/` path and link it in the MDX frontmatter/body.
+6. Publish as a new MDX file under `data/blog/`.
+7. Update the sitemap.
+8. Repurpose the post for Instagram/newsletter/social when needed.
+
+## Image prompt template
+
+Use this when you need to generate or request a hero image outside the repo:
+
+```
+Create a polished 16:9 editorial hero image for an Indian tech blog article about [TOPIC].
+
+Style: modern flat vector infographic, minimal, clean, premium editorial look, suitable for a blog hero image.
+
+Composition:
+- [main visual element]
+- [secondary visual element]
+- [third visual element]
+- Background: [color or mood]
+- Accent colors: [1-3 colors]
+- Keep it clean and not crowded
+- No extra text except [allowed text]
+
+Dimensions:
+- 16:9 horizontal
+- 1536x864 or 1536x1024
+- leave safe space around key elements for blog cropping
+```
+
+## Publishing checklist
+
+- [ ] Article written in the repo's style
+- [ ] Hero image created or requested
+- [ ] Image saved under `public/static/images/<slug>/`
+- [ ] MDX frontmatter image path is correct
+- [ ] MDX hero dimensions match the saved image
+- [ ] Sitemap updated
+- [ ] Post linked in the relevant navigation/index if needed
+- [ ] Quick preview check completed
 
 ## Prompt pattern
 
