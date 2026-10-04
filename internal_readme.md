@@ -14,6 +14,22 @@ This document outlines best practices, conventions, and rules for working with b
 - Prefer an India-angled lens when the topic allows it.
 - Review your changes before submitting a pull request.
 
+## Agent / Grok Onboarding
+
+If you are an agent, Grok, or a bot generating content for this repo, read these three files first:
+
+1. [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) for the editorial voice, structure, image prompt template, and publishing checklist.
+2. [`docs/INDIA_TECH_PLATFORM_DIRECTION.md`](docs/INDIA_TECH_PLATFORM_DIRECTION.md) for the platform’s niche, positioning, and what topics fit.
+3. Existing posts under [`data/blog/`](data/blog/) for current MDX formatting and frontmatter conventions.
+
+Useful defaults:
+
+- Write for an India-focused tech audience.
+- Prefer practical, useful content over hype.
+- Keep posts around 400–700 words.
+- Use markdown and short paragraphs.
+- Use the repo’s image workflow before finishing a post.
+
 See [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) for the editorial style, workflow, and prompt patterns used for new posts.
 
 ## Note
