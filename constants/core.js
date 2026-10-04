@@ -18,19 +18,19 @@ export const COPYRIGHT_NAME = "Technology Pro";
 
 export const CATEGORIES = [
   {
-    title: "News",
+    title: "India Tech",
     route: "/category/news",
   },
   {
-    title: "How-To",
+    title: "Digital India",
     route: "/category/how-to",
   },
   {
-    title: "Social Media",
+    title: "Creator Growth",
     route: "/category/social-media",
   },
   {
-    title: "Stories",
+    title: "India Stories",
     route: "/category/stories",
   },
 ];

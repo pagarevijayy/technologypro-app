@@ -10,7 +10,11 @@ This document outlines best practices, conventions, and rules for working with b
 
 - Keep content clear, concise, and accessible.
 - Maintain a consistent tone and style throughout all posts.
+- Favor high-signal writing: filter noise, explain why it matters, and keep the reader’s time in mind.
+- Prefer an India-angled lens when the topic allows it.
 - Review your changes before submitting a pull request.
+
+See [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) for the editorial style, workflow, and prompt patterns used for new posts.
 
 ## Note
 

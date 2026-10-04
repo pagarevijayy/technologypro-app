@@ -29,7 +29,9 @@
 
 ##  About the Project
 
-**TechnologyPro App** is designed to simplify the blogging process by converting Markdown files into fully styled, responsive blog posts—powered by Next.js, React, Tailwind CSS, and remark plugins. It delivers a fast and mobile-optimized experience for both readers and content creators. Ideal for developers or content teams who prefer writing in Markdown.
+**TechnologyPro App** is a blog application built around Markdown-driven publishing, with the current product direction focused on an India-specific technology platform.
+
+Rather than positioning as a general tech-news site, the project is moving toward a niche, local-context platform for India’s digital economy, policy, tools, and practical tech guidance.
 
 ---
 
@@ -39,7 +41,8 @@
 - **React** – UI component library  
 - **Tailwind CSS** – Utility-first styling  
 - **gray-matter** – Front-matter parser for Markdown  
-- **remark** – Markdown processor
+- **remark** – Markdown processor  
+- **Product focus** – India-specific technology coverage, local policy, practical digital guidance, and niche editorial utility
 
 ---
 
