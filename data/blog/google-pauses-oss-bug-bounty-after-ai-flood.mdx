@@ -1,0 +1,80 @@
+---
+title: "Google Pauses Its Open-Source Bug Bounty After AI Floods the Pipeline"
+summary: "Google froze OSS VRP product-vulnerability submissions on 1 October 2026 after a surge of invalid AI reports. The pause is a triage problem, not a security one — and Indian OSS teams should change intake now."
+publishedAt: "2026-10-05"
+author: "Editorial Team – Technology Pro"
+category: "news"
+image: "/static/images/google-pauses-oss-bug-bounty-after-ai-flood/oss-bounty-hero.jpg"
+slug: "google-pauses-oss-bug-bounty-after-ai-flood"
+smartCrop: "center center"
+smartCropMobile: "center center"
+featuredPost: true
+---
+<Image
+  alt={`AI-generated bug reports clogging an open-source security triage queue`}
+  src={`/static/images/google-pauses-oss-bug-bounty-after-ai-flood/oss-bounty-hero.jpg`}
+  width={1280}
+  height={720}
+  priority
+/>
+
+# Google Pauses Its Open-Source Bug Bounty After AI Floods the Pipeline
+
+Google paused part of its open-source bug bounty on 1 October.
+
+Not because researchers stopped finding bugs. Because too many reports stopped being real.
+
+TechCrunch reported that Google froze the Open Source Software Vulnerability Rewards Program after a “significant rise” in AI submissions. Google’s own line is sharper: “a significant rise in automated submissions, the vast majority of which are not valid.” An update is due in Q1 2027.
+
+## What actually paused
+
+This is not a shutdown of Google’s whole bounty machine.
+
+OSS VRP stopped taking **new product-vulnerability** reports. Supply-chain reports still go through. Reports filed before 1 October stay in the queue. Some Google Cloud repos can still land in Cloud VRP. Other Google bounty programmes, and the Patch Rewards Program, remain open.
+
+The pause is intake design, not a claim that open source got safer overnight.
+
+## Why AI reports break triage
+
+Ordinary spam is easy to dump.
+
+AI reports look finished. They come with titles, steps, logs, and impact language. Maintainers still have to prove the bug exists. That is the cost: each fake report burns the same first hour as a real one.
+
+SecurityWeek and Tom’s Hardware both say Google engineers and open-source maintainers were overwhelmed by invalid reports and hallucinations.
+
+That is the new failure mode. Volume went up. Signal did not.
+
+## Why this hits India
+
+India has a large bounty-hunting and OSS maintainer base. A lot of that work happens on nights, side projects, or as the only security contact on a repo.
+
+Those teams cannot absorb Google-scale noise. If intake stays “send us everything,” generated reports fill the queue and the real bugs wait.
+
+For Indian startups shipping on Google OSS, Android libraries, or Cloud repos, treat security mail like a product funnel, not an inbox.
+
+## What OSS teams should do next
+
+Three filters beat a closed programme.
+
+1. **Demand a reproduction.** Version, command, input, observed output. If it cannot be run, it waits.
+2. **Ask for impact, not adjectives.** Who is affected, remote or local, auth required, what data moves.
+3. **Split the queue.** Reproducible reports go first. Vague or clearly generated reports go to a slow lane.
+
+Do not ban AI. Ban unverifiable claims.
+
+## Bottom line
+
+Google did not pause OSS VRP because bug bounties failed.
+
+It paused because AI made low-effort reports cheap, and human attention is not.
+
+The teams that survive this will reward evidence, not volume.
+
+👉 For more such insights, follow us on [Insta](https://www.instagram.com/technologypro.in) and join our newsletter!
+
+## Sources
+- [Google froze its open source bug bounty program due to a ‘significant rise’ in AI submissions](https://techcrunch.com/2026/10/04/google-froze-its-open-source-bug-bounty-program-due-to-a-significant-rise-in-ai-submissions/) — TechCrunch
+- [Google narrows open source bug bounty amid wave of invalid automated reports](https://www.securityweek.com/google-narrows-open-source-bug-bounty-amid-wave-of-invalid-automated-reports/) — SecurityWeek
+- [Google OSS VRP rules](https://bughunters.google.com/about/rules/open-source/google-open-source-software-vulnerability-reward-program-rules)
+- [Google VRP on X](https://x.com/GoogleVRP/status/2105689195180179605)
+- [Google suspends part of the OSS VRP due to invalid AI submissions](https://www.tomshardware.com/tech-industry/artificial-intelligence/google-suspends-part-of-the-oss-vrp-bug-bounty-program-due-to-an-influx-of-invalid-ai-submissions-product-vulnerability-submissions-ended-october-1) — Tom’s Hardware
