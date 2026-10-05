@@ -57,7 +57,7 @@ const Menubar = () => {
   );
 
   return (
-    <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-10">
+    <header className="py-4 bg-gray-900 text-gray-100 sticky top-0 z-50">
       <Container>
         <div className="flex justify-between items-center">
           <div className="font-poppins font-bold text-lg tracking-wide cursor-pointer select-none transform transition hover:-translate-y-0.5">
@@ -90,7 +90,7 @@ const Menubar = () => {
 
       <nav
         className={
-          "mobile-nav fixed h-screen w-64 top-0 z-20 bg-gray-900" +
+          "mobile-nav fixed h-screen w-64 top-0 z-[60] bg-gray-900" +
           " " +
           (showSidebar ? "right-0 duration-300" : "-right-full duration-500")
         }
@@ -118,7 +118,7 @@ const Menubar = () => {
 
       {showSidebar && (
         <div
-          className="backdrop fixed h-screen w-full top-0 left-0 bg-black bg-opacity-75"
+          className="backdrop fixed h-screen w-full top-0 left-0 z-[55] bg-black bg-opacity-75"
           onClick={toggleSidebar}
         ></div>
       )}

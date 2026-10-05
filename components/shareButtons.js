@@ -47,10 +47,10 @@ const ShareButtons = ({ title, url = '', className = '', variant = 'full' }) => 
     const whatsappText = encodeURIComponent(shareUrl ? `${title} ${shareUrl}` : title);
 
     const hitArea =
-        'relative z-10 inline-flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 rounded-full touch-manipulation select-none';
+        'relative inline-flex items-center justify-center min-w-[44px] min-h-[44px] w-11 h-11 rounded-full touch-manipulation select-none';
 
     return (
-        <div className={`social-share-buttons relative z-10 ${!isCompact ? 'border-t border-gray-200 pt-6' : ''} ${className}`}>
+        <div className={`social-share-buttons ${!isCompact ? 'border-t border-gray-200 pt-6' : ''} ${className}`}>
             {!isCompact && (
                 <h3 className="text-sm font-semibold text-gray-800 mb-4">
                     Share this article
@@ -99,7 +99,7 @@ const ShareButtons = ({ title, url = '', className = '', variant = 'full' }) => 
                 >
                     <HiLink className="pointer-events-none w-5 h-5 text-gray-600" />
                     {copied && (
-                        <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded whitespace-nowrap">
+                        <span className="absolute -top-10 left-1/2 z-20 -translate-x-1/2 bg-gray-800 text-white text-xs py-1 px-2 rounded whitespace-nowrap">
                             Copied!
                         </span>
                     )}

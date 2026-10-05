@@ -22,10 +22,16 @@ export default function Home({ posts, heroFrontMatterData }) {
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter("blog");
 
-  // Get hero post data based on front matter 'featuredPost'
+  // Featured is a promo slot (editorial or paid), not a second Latest feed.
+  // Optional frontmatter `featuredOrder` (lower = earlier). Otherwise newest featured first.
   const heroFrontMatterData = posts
-    .filter(post => post.featuredPost === true)
-    .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt))
+    .filter((post) => post.featuredPost === true)
+    .sort((a, b) => {
+      const orderA = Number.isFinite(a.featuredOrder) ? a.featuredOrder : Number.MAX_SAFE_INTEGER;
+      const orderB = Number.isFinite(b.featuredOrder) ? b.featuredOrder : Number.MAX_SAFE_INTEGER;
+      if (orderA !== orderB) return orderA - orderB;
+      return new Date(b.publishedAt) - new Date(a.publishedAt);
+    })
     .slice(0, 3);
 
   return { props: { posts, heroFrontMatterData } };

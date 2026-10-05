@@ -36,7 +36,7 @@ We are in MVP. Experiment. Rough homepage diet:
 - 15% Creator Growth
 - 15% Tech Stories
 
-Fill Tech Stories; it is empty today. Change the mix when a metric says to.
+Change the mix when a metric says to.
 
 ## Publish / refuse
 
@@ -70,7 +70,7 @@ Refuse:
 - Simple language. Explain jargon once.
 - Light human commentary. Not a press release.
 - Root-relative internal links only.
-- `featuredPost: true` only when the post should occupy a homepage hero slot.
+- See **Featured vs Latest** below. Do not flag every new post as featured.
 
 ## Frontmatter
 
@@ -86,11 +86,31 @@ image: "/static/images/<slug>/hero.jpg"
 slug: "<slug>"
 ```
 
-Optional: `seoTitle`, `smartCrop`, `smartCropMobile`, `featuredPost`.
+Optional: `seoTitle`, `smartCrop`, `smartCropMobile`, `featuredPost`, `featuredOrder` (number, lower = earlier in the promo slot).
 
 Hero image lives at `public/static/images/<slug>/`. MDX `width` / `height` must match the file. Use `next/Image`. Avoid text-heavy images.
 
 The sitemap is generated at build time from `data/**/*.mdx`. Do not hand-edit `public/sitemap.xml`.
+
+## Featured vs Latest
+
+These are two different rails. Do not treat Featured as “the newest posts, bigger.”
+
+| Rail | Job | Source |
+|---|---|---|
+| **Featured** | Promo slot: editorial pick or paid placement | `featuredPost: true`, max **1–3** at a time |
+| **Latest** | The feed | Every post, newest first (LIFO) |
+
+Rules:
+
+- A new post does **not** get `featuredPost` by default. It already appears first in Latest.
+- Featured may overlap Latest. That is fine for one promoted story. It is not fine if Featured is a copy of the three newest posts because everything is flagged.
+- Homepage Featured takes up to 3 flagged posts. Order: `featuredOrder` (lower first), then newest `publishedAt`.
+- To pin a paid or older piece above a newer flagged one, set `featuredOrder: 1` (then 2, 3).
+- When you feature a new post, unflag an old one so the rail stays 1–3.
+- Never hide featured posts from Latest. Latest is always the full chronology.
+
+Default off. Flag only when you are promoting or someone paid.
 
 ## Workflow
 
@@ -131,4 +151,4 @@ Dimensions:
 - [ ] 400–700 words, sources work, CTA present
 - [ ] Frontmatter matches the spec
 - [ ] Hero image exists at the linked path with matching dimensions
-- [ ] `featuredPost` is true only if it should be a homepage hero
+- [ ] `featuredPost` is true only for a promo/paid slot (keep 1–3 sitewide); new posts stay in Latest without the flag

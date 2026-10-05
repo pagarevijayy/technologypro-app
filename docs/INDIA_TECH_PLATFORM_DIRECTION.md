@@ -58,7 +58,7 @@ Do not build a CMS or a platform before the mix proves itself.
 
 Keep the Markdown/Next.js shell.
 
-1. Fill **Tech Stories** (empty today)
+1. Keep **Tech Stories** alive (global tech, Indian lens — e.g. the Google OSS bounty piece)
 2. Keep publishing across all four buckets
 3. RSS, related posts, better social/SEO defaults — after posts exist
 4. Locked dependencies and a deployable build

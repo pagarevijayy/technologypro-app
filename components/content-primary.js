@@ -13,16 +13,29 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRout
     return null
   }
 
+  const query = searchValue.trim().toLowerCase();
+  const showFeatured = !query && !isCategoryRoute && heroFrontMatterData?.length > 0;
+
   const filteredBlogPosts = posts
+    .slice()
     .sort(
       (a, b) =>
         Number(new Date(b.publishedAt)) - Number(new Date(a.publishedAt))
     )
-    .filter((frontMatter) =>
-      frontMatter.title.toLowerCase().includes(searchValue.toLowerCase())
-    );
+    .filter((frontMatter) => {
+      if (!query) {
+        return true;
+      }
 
-  // console.log('get data for hero post #heroPostData', posts);
+      const haystack =
+        frontMatter.searchText ||
+        [frontMatter.title, frontMatter.summary, frontMatter.category, frontMatter.author]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+
+      return haystack.includes(query);
+    });
 
   return (
     <div>
@@ -32,10 +45,10 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRout
 
       <div className="search-box relative w-full mb-4">
         <input
-          aria-label="Search articles"
+          aria-label="Search articles by title, summary, or topic"
           type="text"
           onChange={(e) => setSearchValue(e.target.value)}
-          placeholder="Search articles"
+          placeholder="Search titles, topics, or keywords"
           className="block w-full px-4 py-2 bg-gray-50 text-gray-800 outline-none border border-gray-300 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500  rounded-md"
         />
         <svg
@@ -53,7 +66,9 @@ const ContentPrimary = ({ posts, heroFrontMatterData, isHomePage, isCategoryRout
           />
         </svg>
       </div>
-      {!searchValue && !isCategoryRoute && <FeaturedPosts heroFrontMatterData={heroFrontMatterData} />}
+      {showFeatured && (
+        <FeaturedPosts heroFrontMatterData={heroFrontMatterData} />
+      )}
 
       <h3 className="font-bold text-2xl mb-4 mt-8">Latest Posts</h3>
       {!filteredBlogPosts.length && <NotFound />}

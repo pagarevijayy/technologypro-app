@@ -9,8 +9,8 @@
 ## Content (MVP / experiment)
 
 - [ ] Publish across all four buckets. Starting mix: 40% India Tech / 30% Guides / 15% Creator Growth / 15% Tech Stories.
-- [ ] Fill Tech Stories — it currently has zero posts.
-- [ ] Use `featuredPost` only for homepage hero slots.
+- [x] Put the Google OSS bounty post in Tech Stories.
+- [x] Keep Featured as a promo slot: only the latest 3 flagged for now; document usage in `docs/CONTENT_STYLE.md`.
 - [ ] Watch search, email, repeat visits, and inbound. Change the mix when a metric says to.
 
 ## Product

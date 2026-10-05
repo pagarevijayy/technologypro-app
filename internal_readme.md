@@ -35,7 +35,14 @@ slug: "<slug>"
 - `social-media` → Creator Growth
 - `stories` → Tech Stories
 
-Optional: `seoTitle`, `smartCrop`, `smartCropMobile`, `featuredPost`.
+Optional: `seoTitle`, `smartCrop`, `smartCropMobile`, `featuredPost`, `featuredOrder`.
+
+### Featured vs Latest
+
+- **Latest** = every post, newest first. Do not skip posts.
+- **Featured** = promo rail (editorial pick or paid). Default off.
+- Cap at 1–3 featured posts sitewide. Overlap with Latest is allowed for a promoted story; do not flag every new post or Featured becomes a second Latest.
+- `featuredOrder` (lower = earlier) pins a paid/older piece above a newer flagged one. See [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md).
 
 ## Images
 
