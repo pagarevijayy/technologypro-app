@@ -1,18 +1,23 @@
 /** Default Meta */
-export const PROJECT_TITLE = "Technology Pro – Exploring the Digital World Through an Indian Lens";
-export const PROJECT_PUNCHLINE = "Tech News, Tips & Tricks";
+export const PROJECT_TITLE =
+  "Technology Pro – Everything in tech, through an Indian lens";
+export const PROJECT_PUNCHLINE = "Everything in tech. Indian lens.";
 export const PROJECT_DESCRIPTION =
-  "Get to know what's happening in the technology world from an Indian perspective. Latest news, tips & tricks on gadgets, apps, social media and more.";
-export const PROJECT_DESCRIPTION_ALT = "Discover the latest tech news, tips & tricks on gadgets, apps, social media and more — for everyday learners & professionals.";
-export const PROJECT_DESCRIPTION_ALT_2 = "Exploring the latest in technology — gadgets, apps, social media, and the evolving digital world — through an Indian lens, for curious learners & professionals.";
+  "What’s happening in technology, read from India — news, explainers, and stories worth your time. For curious learners and professionals.";
+export const PROJECT_DESCRIPTION_ALT =
+  "Everything going on in the tech world, through an Indian lens.";
+export const PROJECT_DESCRIPTION_ALT_2 =
+  "For curious learners and professionals. We cover what’s happening in tech worldwide, then say why it matters here.";
 export const PROJECT_TYPE = "website";
 export const PROJECT_ROOT_URL = "https://technologypro.in";
 export const PROJECT_BANNER_URL =
   "https://technologypro.in/static/assets/banner_techpro.png";
 export const TWITTER_HANDLE = "";
 export const CONTACT_EMAIL = "pagarevijayy+techpro@gmail.com";
+export const INSTAGRAM_URL = "https://www.instagram.com/technologypro.in";
+export const NEWSLETTER_URL = "https://technologypro.substack.com/";
 
-//** To be used at places other than Meta */
+/** To be used at places other than Meta */
 export const PROJECT_NAME = "Technology Pro";
 export const COPYRIGHT_NAME = "Technology Pro";
 
@@ -22,7 +27,7 @@ export const CATEGORIES = [
     route: "/category/news",
   },
   {
-    title: "Digital India",
+    title: "Guides",
     route: "/category/how-to",
   },
   {
@@ -30,7 +35,7 @@ export const CATEGORIES = [
     route: "/category/social-media",
   },
   {
-    title: "India Stories",
+    title: "Tech Stories",
     route: "/category/stories",
   },
 ];

@@ -11,9 +11,9 @@ const NotFound = () => {
         ></Image>
       </figure>
       <section className="text-gray-600 dark:text-gray-400 my-4 text-center">
-        <p>No posts found.</p>
+        <p>No matching posts.</p>
         <p className=" mt-4 text-xs italic">
-          Hint: Searches work better with the title name of the post.
+          Try a title, or browse India Tech and Guides.
         </p>
       </section>
     </div>

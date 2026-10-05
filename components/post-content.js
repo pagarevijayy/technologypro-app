@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { parseISO, format } from "date-fns";
 import ShareButtons from "./shareButtons";
+import { PROJECT_ROOT_URL } from "../constants/core";
 
 const PostContent = ({ frontMatter, children }) => {
+  const shareUrl = `${PROJECT_ROOT_URL}/blog/${frontMatter.slug}`;
 
   return (
     <div className="article-content max-w-prose mx-auto p-2 md:p-5">
@@ -28,6 +30,7 @@ const PostContent = ({ frontMatter, children }) => {
 
         <ShareButtons
           title={frontMatter.title}
+          url={shareUrl}
           variant="compact"
         />
 
@@ -37,6 +40,7 @@ const PostContent = ({ frontMatter, children }) => {
 
       <ShareButtons
         title={frontMatter.title}
+        url={shareUrl}
         className="mt-8"
       />
 

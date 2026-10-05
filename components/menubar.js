@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import Container from "../layouts/container";
 import { brandLogo } from "../constants/brand";
-import { CATEGORIES } from "../constants/core";
+import { CATEGORIES, NEWSLETTER_URL } from "../constants/core";
 
 const Menubar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -49,7 +49,7 @@ const Menubar = () => {
     <li className="text-center md:pl-2">
       <button
         className="w-full md:w-32 px-4 py-2 font-medium focus:outline-none text-gray-200 bg-indigo-500 rounded-3xl 
-        transform transition hover:-translate-y-0.5 hover:bg-indigo-400 active:bg-indigo-600" onClick={() => window.open('https://technologypro.substack.com/', '_blank')}
+        transform transition hover:-translate-y-0.5 hover:bg-indigo-400 active:bg-indigo-600" onClick={() => window.open(NEWSLETTER_URL, '_blank')}
       >
         Subscribe
       </button>

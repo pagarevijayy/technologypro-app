@@ -1,8 +1,20 @@
 # todo
 
-- [x] Reposition the project as an India-specific technology platform.
-- [x] Update the README to reflect the niche focus on local policy, tools, and practical tech guidance.
-- [x] Expand navigation into topic clusters aligned with the India digital economy wedge.
-- [ ] Add evergreen landing/category pages for government apps, UPI, GST, AI policy, and digital literacy.
-- [ ] Improve search/category structure and related-post discovery for practical readers.
-- [ ] Validate the platform with 30-40 evergreen posts before adding major platform features.
+## Done
+
+- [x] Lock positioning: everything in tech, Indian lens, curious learners and professionals.
+- [x] Relabel nav (routes unchanged): India Tech, Guides, Creator Growth, Tech Stories.
+- [x] Realign docs, README, and public copy to that positioning.
+
+## Content (MVP / experiment)
+
+- [ ] Publish across all four buckets. Starting mix: 40% India Tech / 30% Guides / 15% Creator Growth / 15% Tech Stories.
+- [ ] Fill Tech Stories — it currently has zero posts.
+- [ ] Use `featuredPost` only for homepage hero slots.
+- [ ] Watch search, email, repeat visits, and inbound. Change the mix when a metric says to.
+
+## Product
+
+- [ ] Add RSS and keep Substack as the email path.
+- [ ] Related posts / discovery once there is enough in each bucket.
+- [ ] Confirm mobile share buttons after the tap-target / URL fix ships to production.

@@ -1,68 +1,61 @@
 # The Blog App
 
-A comprehensive guide for maintaining and contributing to the Blog App project.
+How to add and maintain posts in this repository.
 
-## Overview
+Read these first:
 
-This document outlines best practices, conventions, and rules for working with blog content, especially MDX files, within this repository.
+1. [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) — positioning, voice, categories, frontmatter, checklist
+2. [`docs/INDIA_TECH_PLATFORM_DIRECTION.md`](docs/INDIA_TECH_PLATFORM_DIRECTION.md) — strategy and MVP
+3. Existing files under [`data/blog/`](data/blog/) — live MDX shape
 
-## General Guidelines
+## Positioning (do not drift)
 
-- Keep content clear, concise, and accessible.
-- Maintain a consistent tone and style throughout all posts.
-- Favor high-signal writing: filter noise, explain why it matters, and keep the reader’s time in mind.
-- Prefer an India-angled lens when the topic allows it.
-- Review your changes before submitting a pull request.
+Everything going on in the tech world, through an Indian lens — for curious learners and professionals.
 
-## Agent / Grok Onboarding
+## MDX mechanics
 
-If you are an agent, Grok, or a bot generating content for this repo, read these three files first:
+Posts live at `data/blog/<slug>.mdx` and render at `/blog/<slug>`.
 
-1. [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) for the editorial voice, structure, image prompt template, and publishing checklist.
-2. [`docs/INDIA_TECH_PLATFORM_DIRECTION.md`](docs/INDIA_TECH_PLATFORM_DIRECTION.md) for the platform’s niche, positioning, and what topics fit.
-3. Existing posts under [`data/blog/`](data/blog/) for current MDX formatting and frontmatter conventions.
+Required frontmatter:
 
-Useful defaults:
+```yaml
+title: "..."
+summary: "At least two sentences."
+publishedAt: "yyyy-mm-dd"
+author: "Editorial Team – Technology Pro"
+category: "news"
+image: "/static/images/<slug>/hero.jpg"
+slug: "<slug>"
+```
 
-- Write for an India-focused tech audience.
-- Prefer practical, useful content over hype.
-- Keep posts around 400–700 words.
-- Use markdown and short paragraphs.
-- Use the repo’s image workflow before finishing a post.
+`category` must be one of:
 
-See [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) for the editorial style, workflow, and prompt patterns used for new posts.
+- `news` → India Tech
+- `how-to` → Guides
+- `social-media` → Creator Growth
+- `stories` → Tech Stories
 
-## Note
+Optional: `seoTitle`, `smartCrop`, `smartCropMobile`, `featuredPost`.
 
-- Avoid using images with excessive text, as it can negatively impact readability and aesthetics.
+## Images
 
-## MDX File Rules
+- Store under `public/static/images/<slug>/`
+- Reference from the public root, e.g. `/static/images/<slug>/hero.jpg`
+- Use the `Image` component for internal images
+- Wrap in `<a>` only when the image itself is a link
+- Width/height in MDX must match the file
+- Avoid images with lots of text
 
-1. **FrontMatter**
-   - Double-check all **frontMatter** details and formatting.
-   - Required fields:
-     - `filename`: The slug for the post.
-     - `title`: String.
-     - `publishedAt`: Date in `yyyy-mm-dd` format.
-     - `summary`: String, at least two lines.
-     - `image`: Path from the public root, e.g., `"/images/example.jpg"`.
-     - `category`: Route string, e.g., `'how-to'` or `'social-media'`.
-   - *Sample frontMatter will be provided soon.*
+## Links
 
-2. **Internal Links**
-   - Use `'/'` for root-relative links or `'#'` for anchor links within the same page.
+- Root-relative internal links (`/blog/...`)
+- `#` for in-page anchors
+- Working `https` URLs in Sources
 
-3. **Images**
-   - For internal images, use the `'next/Image'` component.
-   - Avoid external images unless configured in `next.config.js`.
-   - To wrap an `<Image>` in a link, use `<a>...</a>`. Otherwise, standard Markdown image syntax is acceptable.
+## Sitemap
 
-4. **Components**
-   - Declare new components as needed for custom functionality or formatting.
+Generated at build from `data/**/*.mdx` via `lib/generate-sitemap.js`. Do not commit hand-edits to `public/sitemap.xml`.
 
-## Contribution
+## Verification
 
-- Follow the above rules for all new or updated blog posts.
-- Submit a pull request for review.
-- For questions or suggestions, contact the project maintainers.
-
+`npm run build` is the check. Preview locally with `npm run dev`.

@@ -1,68 +1,83 @@
-# India Tech Platform Direction
+# Site Direction
 
-Date: 2026-10-04
+Date: 2026-10-06
+
+Editorial operations live in [`CONTENT_STYLE.md`](./CONTENT_STYLE.md). This file is strategy only.
 
 ## Verdict
 
-Worth pursuing if the project is repositioned as a focused India-specific technology platform, not as a broad tech-news blog.
+Build a tech magazine with a point of view, not a policy desk and not a generic news clone.
 
-Do not compete head-on with Inc42, YourStory, TechCrunch India, Digit, or Android Central India. Their advantage is scale and editorial breadth. The stronger opportunity is a narrower, more useful local platform.
+Positioning:
 
-## Positioning
+> Everything going on in the tech world, through an Indian lens — for curious learners and professionals.
 
-TechnologyPro should be understood as:
+Do not try to out-scale Inc42, YourStory, TechCrunch India, Digit, or Android Central India. Win on taste: short, high-signal pieces with a local brain.
 
-> Practical technology guidance for people building, buying, selling, governing, or operating in India's digital economy.
+## What “Indian lens” means
 
-The platform should prioritize local context, practical impact, policy translation, and actionable guidance over generic global tech coverage.
+- India-origin story → **India Tech**
+- Evergreen teaching → **Guides**
+- Social/creator tools → **Creator Growth**
+- Hot global tech, told for an Indian reader → **Tech Stories**
 
-## Best Wedge
+A global story is allowed when we add a consequence, not a flag. UPI, GST, and gov apps are in-scope when they are the story. They are not the brand.
 
-Start with one wedge: **India digital infrastructure and practical digital adoption**.
+## Nav (routes locked)
 
-Potential topics:
+| Label | Route | Job |
+|---|---|---|
+| India Tech | `/category/news` | India-specific stories, news, topics |
+| Guides | `/category/how-to` | How-tos and explainers |
+| Creator Growth | `/category/social-media` | Digital creators using social/media tech |
+| Tech Stories | `/category/stories` | Hot actions in tech, worldwide, Indian lens |
 
-- Government apps and services
-- UPI, Aadhaar, and digital payments
-- GST and compliance changes affecting tech businesses
-- AI/data policy explained for builders
-- Local procurement, subsidies, and startup-impacting rules
-- Practical digital literacy for professionals and MSMEs
+## Mix
 
-## MVP Scope
+Starting experiment, not a promise:
 
-Keep the current Markdown/Next.js shell, but add only what supports the niche:
+- 40% India Tech
+- 30% Guides
+- 15% Creator Growth
+- 15% Tech Stories
 
-1. Stronger search and category structure
-2. RSS feed
-3. Author page
-4. Tags or topic collections
-5. Related posts
-6. Better social image and SEO defaults
-7. A simple content calendar
-8. CI, linting, and locked dependencies
+MVP rule: publish, distribute, look at search, email, repeat visits, and inbound. Change the mix when something works.
 
-## 90-Day Validation
+## Funnel
 
-Test whether this can become a real platform before expanding.
+The site is still a low-cost funnel, just not a single-topic funnel:
 
-Goal:
+1. Search + homepage
+2. LinkedIn recut of every post
+3. Instagram / Substack
+4. Later: affiliates, small products, inbound work — if a metric appears
 
-- Publish 30–40 evergreen or semi-evergreen posts
-- Grow a small but active audience from search, Instagram, LinkedIn, or Substack
-- See repeat visits
-- Get inbound interest from advertisers, partners, or readers
+Do not build a CMS or a platform before the mix proves itself.
 
-If these signals do not appear, do not expand into a full platform.
+## MVP
+
+Keep the Markdown/Next.js shell.
+
+1. Fill **Tech Stories** (empty today)
+2. Keep publishing across all four buckets
+3. RSS, related posts, better social/SEO defaults — after posts exist
+4. Locked dependencies and a deployable build
+
+## 90-day validation
+
+- Regular publishing across the four menus
+- Email signups, repeat visits, or inbound interest
+- At least one bucket that clearly works
+
+If nothing moves, change topics before changing the app.
 
 ## Avoid
 
-- Generic global tech news
-- Fast news cycles with no evergreen value
-- Large platform features before validating demand
-- Broad “India tech blog” positioning
-- Building a CMS before the content model is proven
+- Treating UPI/GST as the whole site
+- Generic global recaps
+- Empty nav labels
+- Large features before the content model is proven
 
-## Bottom Line
+## Bottom line
 
-Proceed as a low-cost content funnel and niche platform experiment. Expand only after the wedge earns traffic and trust.
+A tech magazine, Indian lens, curious readers. Experiment in public. Expand only after something works.

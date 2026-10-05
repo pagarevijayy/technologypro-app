@@ -1,4 +1,4 @@
-import { COPYRIGHT_NAME } from "../constants/core";
+import { COPYRIGHT_NAME, INSTAGRAM_URL, NEWSLETTER_URL } from "../constants/core";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,16 +9,22 @@ const Footer = () => {
         © {currentYear} {COPYRIGHT_NAME} All Rights Reserved
       </span>
       <span className="hidden md:inline md:mx-1">|</span>
-      <span>
+      <span className="block md:inline mt-2 md:mt-0 space-x-3">
         <a
-          href="http://instagram.com/technologypro.in"
-          className="mt-4 inline-flex items-center gap-2  transition-colors duration-200 group"
+          href={NEWSLETTER_URL}
+          className="hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span className="group-hover:underline">
-            Follow us on Instagram: @technologypro.in
-          </span>
+          Newsletter
+        </a>
+        <a
+          href={INSTAGRAM_URL}
+          className="hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
         </a>
       </span>
     </footer>

@@ -2,7 +2,7 @@
 
 ![TechnologyPro](./public/static/assets/banner_techpro.png)
 
-> A blog application that converts Markdown files into blog posts — a fully featured, mobile‑friendly, responsive web app.
+> Everything in tech, through an Indian lens. For curious learners and professionals.
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=flat-square)](https://techpro-app.vercel.app/)
 [![Live Site](https://img.shields.io/badge/Live-Site-blue?style=flat-square)](https://technologypro.in/)
@@ -29,9 +29,9 @@
 
 ##  About the Project
 
-**TechnologyPro App** is a blog application built around Markdown-driven publishing, with the current product direction focused on an India-specific technology platform.
+**TechnologyPro** is a Markdown-driven tech magazine with an Indian lens.
 
-Rather than positioning as a general tech-news site, the project is moving toward a niche, local-context platform for India’s digital economy, policy, tools, and practical tech guidance.
+We cover what’s going on in the tech world — news, guides, creator tools, and hot stories — for curious learners and professionals. The lens is the product. Editorial rules: [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md). Strategy: [`docs/INDIA_TECH_PLATFORM_DIRECTION.md`](docs/INDIA_TECH_PLATFORM_DIRECTION.md).
 
 ---
 
@@ -42,7 +42,7 @@ Rather than positioning as a general tech-news site, the project is moving towar
 - **Tailwind CSS** – Utility-first styling  
 - **gray-matter** – Front-matter parser for Markdown  
 - **remark** – Markdown processor  
-- **Product focus** – India-specific technology coverage, local policy, practical digital guidance, and niche editorial utility
+- **Product focus** – Global tech through an Indian lens; India Tech, Guides, Creator Growth, Tech Stories
 
 ---
 
@@ -87,15 +87,15 @@ Make sure you have the following installed:
 
 ##  Usage
 
-- **Add a Markdown file** under a designated posts directory (e.g., \`/blog\`) following the naming convention and include front matter.
-- The app will **automatically render** your markdown as a blog post using Next.js routing.
-- Customize by editing layout, styling, or remark plugin configurations.
+- Add an MDX file under `data/blog/` using the frontmatter in [`internal_readme.md`](internal_readme.md).
+- The app renders it at `/blog/<slug>`.
+- Follow [`docs/CONTENT_STYLE.md`](docs/CONTENT_STYLE.md) before publishing.
 
 ---
 
 ##  Roadmap
 
-Roadmap is maintained on github issues itself. View issues under `enhancement` tag.
+Near-term work is in [`todo.md`](todo.md). Direction is in [`docs/INDIA_TECH_PLATFORM_DIRECTION.md`](docs/INDIA_TECH_PLATFORM_DIRECTION.md). GitHub `enhancement` issues are optional extras.
 
 ---
 
