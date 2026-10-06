@@ -1,0 +1,137 @@
+---
+title: "DHH Put the Pencil Down. So What Should Programmers Do Now?"
+summary: "DHH says agents now write most of the code at 37signals. The interesting question is not whether programmers disappear. It is what becomes valuable when writing code is no longer the bottleneck."
+publishedAt: "2026-10-06"
+author: "Editorial Team"
+category: "stories"
+image: "/static/images/dhh-pencils-down/hero.jpg"
+slug: "dhh-pencils-down"
+smartCrop: "center center"
+smartCropMobile: "center center"
+featuredPost: true
+---
+
+<Image
+  alt={`A pencil set aside while a developer directs code on a laptop`}
+  src={`/static/images/dhh-pencils-down/hero.jpg`}
+  width={1536}
+  height={864}
+  priority
+/>
+
+# DHH Put the Pencil Down. So What Should Programmers Do Now?
+
+David Heinemeier Hansson did not say that programming is dead. His argument is more specific: writing the code yourself is becoming unnecessary.
+
+At the Rails World opening keynote in Austin, DHH said 37signals has essentially gone "pencils down". Agents now write most of the code, while humans decide what needs to be built, guide the implementation, review the result and ship it.
+
+On 6 October, he doubled down on the idea in his post *Over my dead pencil*.
+
+The claim is provocative, but the underlying shift is already happening across software development. The question for engineers is no longer whether AI will write code. It is what happens to the engineering role when writing code stops being the main bottleneck.
+
+## From writing code to specifying software
+
+DHH dates his own transition to November 2025. He says he spent 21 years writing roughly 30,000 lines of production Ruby a year. In August, he produced around 150,000 lines of code, with almost none of it typed by him.
+
+He says he stopped writing code by hand around March.
+
+DHH believes the productivity gap could eventually become much larger than the traditional "10x engineer" idea. He described 100x as unsurprising and suggested that 1,000x may be closer to the eventual difference between a developer working without agents and one who knows how to use them effectively.
+
+Whether the number is actually 1,000x is difficult to establish. The more important point is that implementation is becoming dramatically cheaper.
+
+Software has been moving in this direction for decades. Compilers removed the need to think in machine instructions. High-level languages removed another layer of complexity. Frameworks and cloud platforms removed more work from the developer.
+
+AI coding agents are doing the same thing with manual implementation.
+
+That also explains DHH's comment that English has become his preferred programming language. When an agent handles much of the implementation, the valuable input is increasingly the description of the problem, the desired behaviour and the constraints.
+
+## The bottleneck is moving
+
+The obvious question is what engineers should actually be good at when typing code is no longer the main constraint.
+
+The answer is not simply "prompting".
+
+An engineer still needs to understand the problem, break it into useful pieces, define what good looks like and recognise when the implementation is wrong. They need enough knowledge of the underlying system to review an agent's decisions rather than blindly accepting them.
+
+That changes the nature of the work.
+
+Instead of spending most of the time converting tickets into code, engineers can spend more time thinking about architecture, edge cases, reliability, performance and product behaviour.
+
+This is also where the traditional 10x engineer conversation starts to look outdated. The interesting comparison may increasingly be between a good developer working without agents and a good developer who knows how to direct several agents effectively.
+
+The gap could be significant.
+
+But there is an important limitation: an agent can produce 10,000 lines of code very quickly. It cannot automatically determine whether those 10,000 lines should exist.
+
+That still requires engineering judgment.
+
+## Why this matters for Indian software engineers
+
+This shift is particularly relevant to India's technology industry.
+
+A significant part of India's software business has historically been built around engineering capacity: more developers, more projects, more tickets and more billable hours. If one engineer can now produce substantially more with AI agents, that model will eventually face pressure.
+
+The same change creates an opportunity for Indian product teams.
+
+A small team can potentially build software that previously required a much larger engineering organisation. A developer who once depended on separate frontend, backend, QA and infrastructure resources for every feature can increasingly coordinate much of that work through AI tools.
+
+This does not mean every engineer needs to become a founder. It means the leverage available to a strong engineer is increasing.
+
+For individual engineers, that should influence what skills are worth investing in. Becoming slightly better at writing React, Java or Python code will still matter, but it is unlikely to be the biggest differentiator five years from now.
+
+System design, architecture, AI agents, product thinking, evaluation and the ability to ship complete systems are likely to matter more.
+
+## What happens to programming skills?
+
+This does not mean engineers should stop coding.
+
+In fact, strong programming fundamentals may become more important because the engineer is now responsible for reviewing substantially more generated code.
+
+An agent can confidently produce an inefficient database design, an insecure API or an unnecessarily complicated architecture. Without the ability to recognise those problems, higher AI productivity simply produces bad software faster.
+
+The workflow is therefore changing rather than disappearing.
+
+The traditional process looks something like:
+
+> Ticket → write code → test → ship
+
+An increasingly common workflow looks more like:
+
+> Problem → specification → agent implementation → review → test → iterate → ship
+
+The engineer moves one level higher in the process.
+
+The role starts to resemble a technical director working with extremely fast software agents: deciding what should happen, delegating implementation, reviewing the result and correcting the direction when necessary.
+
+That is a very different job from simply writing every line of code.
+
+## The uncomfortable part
+
+There is one part of DHH's argument that engineers should take seriously.
+
+If the most enjoyable part of programming is turning a ticket into working code, AI agents are directly changing that part of the job. Some of the repetitive implementation work that developers have spent years getting good at is becoming much easier to automate.
+
+But if the interesting part is understanding a problem, designing a system, making trade-offs and seeing a product come together, the shift looks very different.
+
+The cost of building software is falling. Smaller teams can attempt bigger ideas, and individual engineers can potentially have much more impact.
+
+That does not make engineering less important. It changes where the value sits.
+
+## The real takeaway
+
+DHH's "pencils down" argument is ultimately not about pencils or even Ruby. It is about where engineering leverage is moving.
+
+Writing code is becoming cheaper. Knowing what code should be written is becoming more important.
+
+For engineers, the opportunity is to move up the stack: from implementation to specification, from individual tickets to systems, and from simply producing code to judging whether the resulting software is actually good.
+
+The engineers who adapt will not necessarily be the ones who write the most code.
+
+They will be the ones who can give AI systems the right direction, catch their mistakes and turn that leverage into software that people actually want to use.
+
+## Sources
+
+- [Over my dead pencil](https://world.hey.com/dhh/over-my-dead-pencil-fb0f3647) — DHH, 6 October 2026
+- [Rails World 2026 opening keynote](https://www.youtube.com/watch?v=vDjW_dRyKXY) — Ruby on Rails
+- [Pencils down: DHH declares the end of hand-written code](https://dealroom.co/news/talk-vDjW_dRyKXY-pencils-down-dhh-declares-the-end-of-hand-written-code/) — Dealroom
+- [Takeaways from DHH's Rails World 2026 keynote](https://antonzolotov.com/dhh-rails-world-2026) — Anton Zolotov

@@ -1,6 +1,14 @@
 import Link from "next/link";
 import Image from "next/legacy/image";
 
+const MDXImage = ({ width, height, ...props }) => (
+  <Image
+    {...props}
+    width={width === undefined ? undefined : Number(width)}
+    height={height === undefined ? undefined : Number(height)}
+  />
+);
+
 /** To wrap an Image tag inside an <a> (anchor tag) in the .mdx file*/
 const CustomLink = (props) => {
   const href = props.href;
@@ -19,7 +27,7 @@ const CustomLink = (props) => {
 
 /** Declare components to be used inside .mdx files in this object */
 const MDXComponents = {
-  Image,
+  Image: MDXImage,
   a: CustomLink,
 };
 
